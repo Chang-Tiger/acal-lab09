@@ -1,13 +1,13 @@
-package lab10.PiplinedCPU
+package acal_lab09.PiplinedCPU
 
 import chisel3._
 import chisel3.util._
 
-import lab10.MemIF._
-import lab10.PiplinedCPU.StageRegister._
-import lab10.PiplinedCPU.Controller._
-import lab10.PiplinedCPU.DatapathModule._
-import lab10.PiplinedCPU.opcode_map._
+import acal_lab09.MemIF._
+import acal_lab09.PiplinedCPU.StageRegister._
+import acal_lab09.PiplinedCPU.Controller._
+import acal_lab09.PiplinedCPU.DatapathModule._
+import acal_lab09.PiplinedCPU.opcode_map._
 
 class PiplinedCPU(memAddrWidth: Int, memDataWidth: Int) extends Module {
     val io = IO(new Bundle{
