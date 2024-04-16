@@ -31,15 +31,52 @@ typedef struct {
 	uint8_t bytes[VLMAX];
 } vector_reg;
 
-typedef enum {
+
+typedef enum
+{
 	UNIMPL = 0,
 
-	//instruction added
-	MUL,
-    VLE8_V,
-    VSE8_V,
-    VADD_VV,
-    VMUL_VX,
+	// instruction added Tiger_Chang
+	ANDN,
+	CLMUL,
+	CLMULH,
+	CLMULR,
+	CLZ,
+	CPOP,
+	CTZ,
+	MAX,
+	//*****************
+	// instruction added
+	// funfish111065531
+	MAXU, // unsiged max
+	MIN,  // signed min
+	MINU, // unsigned min
+	ORN,  // OR with inverted operand
+	ROL,  // Rotate Left (Register)
+	ROR,  // Rotate Right (Register)
+
+	ORC_B, // Bitwise OR-Combine, byte granule
+	REV8,  // Byte-reverse register
+	//*****************
+	// 111064528 : 17~24
+	RORI,
+	BCLR,
+	BCLRI,
+	BEXT,
+	BEXTI,
+	BINV,
+	BINVI,
+	BSET,
+	//*****************
+    //112062674
+    BSETI,
+    SEXTB,
+    SEXTH,
+    SH1ADD,
+    SH2ADD,
+    SH3ADD,
+    XNOR,
+    ZEXTH,
     //*****************
 
 	ADD,
@@ -81,6 +118,7 @@ typedef enum {
 	XORI,
 	HCF
 } instr_type;
+
 
 typedef enum {
 	OPTYPE_NONE, // more like "don't care"
