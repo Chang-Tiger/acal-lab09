@@ -23,4 +23,6 @@ orc.b    t2, t0
 nop
 nop
 nop
+nop
+nop
 hcf
