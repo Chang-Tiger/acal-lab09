@@ -77,6 +77,123 @@ void translate_to_machine_code(uint8_t* mem,instr* imem, char* argv1){
 
         //follow the ISA and combine the fragment information in binary form
 		switch(i.op){
+
+
+            // 16 ~ 29
+            // ***********************************************************
+            case BEXT:
+				binary = 0b0110011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b101 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.reg << 20;    //rs2
+				binary += 0b0100100 << 25;   //funct7
+			break;
+            case BSETI:
+				binary = 0b0010011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b001 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.imm << 20;    //rs2
+				binary += 0b0010100 << 25;   //funct7
+			break;
+            case BCLRI:
+				binary = 0b0010011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b001 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.imm << 20;    //rs2
+				binary += 0b0100100 << 25;   //funct7
+			break;
+            case BINVI:
+				binary = 0b0010011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b000 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.imm << 20;    //rs2
+				binary += 0b0110100 << 25;   //funct7
+			break;
+            case BEXTI:
+				binary = 0b0010011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b101 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.imm << 20;    //rs2
+				binary += 0b0100100 << 25;   //funct7
+			break;
+            case ROR:
+				binary = 0b0110011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b101 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.reg << 20;    //rs2
+				binary += 0b0110000 << 25;   //funct7
+			break;
+            case ROL:
+				binary = 0b0110011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b001 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.reg << 20;    //rs2
+				binary += 0b0110000 << 25;   //funct7
+			break;
+            case RORI:
+				binary = 0b0010011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b101 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.imm << 20;    //rs2
+				binary += 0b0110000 << 25;   //funct7
+			break;
+            case SH1ADD:
+				binary = 0b0110011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b010 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.reg << 20;    //rs2
+				binary += 0b0010000 << 25;   //funct7
+			break;
+            case SH2ADD:
+				binary = 0b0110011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b100 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.reg << 20;    //rs2
+				binary += 0b0010000 << 25;   //funct7
+			break;
+            case SH3ADD:
+				binary = 0b0110011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b110 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += i.a3.reg << 20;    //rs2
+				binary += 0b0010000 << 25;   //funct7
+			break;
+            case REV8:
+				binary = 0b0010011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b101 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += 0b11000 << 20;     //rs2
+				binary += 0b0110100 << 25;   //funct7
+			break;
+            case ZEXTH:
+				binary = 0b0110011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b000 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += 0b00000 << 20;     //rs2
+				binary += 0b0000100 << 25;   //funct7
+			break;
+            case ORC_B:
+				binary = 0b0010011;          //opcode
+				binary += i.a1.reg << 7;     //rd
+				binary += 0b000 << 12;       //funct3
+				binary += i.a2.reg << 15;    //rs1
+				binary += 0b00111 << 20;     //rs2
+				binary += 0b0010100 << 25;   //funct7
+
+            // ***********************************************************
 			case ADD:
 			    // rf[i.a1.reg] = rf[i.a2.reg] + rf[i.a3.reg]; break;
 				binary = (0x0C << 2) + 0x03; //opcode
