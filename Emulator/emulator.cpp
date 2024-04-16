@@ -11,26 +11,6 @@
 #include "translate.h"
 #include "linenoise.hpp"
 
-
-uint32_t parse_uimm(char *tok, int bits, int line, bool strict = true)
-{
-	if (!(tok[0] >= '0' && tok[0] <= '9') && strict)
-	{
-		print_syntax_error(line, "Malformed immediate value");
-	}
-	long int imml = strtol(tok, NULL, 0);
-
-	if (imml > ((1 << bits) - 1) || imml < 0)
-	{
-		printf("Syntax error at token %s\n", tok);
-		exit(1);
-	}
-	uint64_t uv = *(uint64_t *)&imml;
-	uint32_t hv = (uv & UINT32_MAX);
-
-	return hv;
-}
-
 bool streq(char* s, const char* q) {
 	if ( strcmp(s,q) == 0 ) return true;
 
@@ -64,7 +44,24 @@ void print_vector_regfile(vector_reg vrf[32]) {
 		}
 	}
 }
+uint32_t parse_uimm(char *tok, int bits, int line, bool strict = true)
+{
+	if (!(tok[0] >= '0' && tok[0] <= '9') && strict)
+	{
+		print_syntax_error(line, "Malformed immediate value");
+	}
+	long int imml = strtol(tok, NULL, 0);
 
+	if (imml > ((1 << bits) - 1) || imml < 0)
+	{
+		printf("Syntax error at token %s\n", tok);
+		exit(1);
+	}
+	uint64_t uv = *(uint64_t *)&imml;
+	uint32_t hv = (uv & UINT32_MAX);
+
+	return hv;
+}
 instr_type parse_instr(char* tok) {
 
 	// instruction added
