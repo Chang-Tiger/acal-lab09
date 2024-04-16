@@ -49,14 +49,72 @@ void print_vector_regfile(vector_reg vrf[32]) {
 
 instr_type parse_instr(char* tok) {
 
-	//instruction added
-	if ( streq(tok , "mul")) return MUL;
-    if ( streq(tok , "vle8_v")) return VLE8_V;
-    if ( streq(tok , "vse8_v")) return VSE8_V;
-    if ( streq(tok , "vadd_vv")) return VADD_VV;
-    if ( streq(tok , "vmul_vx")) return VMUL_VX;
-    //*****************
+	// instruction added
+	if (streq(tok, "andn"))
+		return ANDN;
+	if (streq(tok, "max"))
+		return MAX;
+	if (streq(tok, "clmul"))
+		return CLMUL;
+	if (streq(tok, "clmulh"))
+		return CLMULH;
+	if (streq(tok, "clmulr"))
+		return CLMULR;
+	if (streq(tok, "clz"))
+		return CLZ;
+	if (streq(tok, "ctz"))
+		return CTZ;
+	if (streq(tok, "cpop"))
+		return CPOP;
+	//*****************
+	// instruction added
+	if (streq(tok, "maxu"))
+		return MAXU;
+	if (streq(tok, "min"))
+		return MIN;
+	if (streq(tok, "minu"))
+		return MINU;
+	if (streq(tok, "orn"))
+		return ORN;
+	if (streq(tok, "rol"))
+		return ROL;
+	if (streq(tok, "ror"))
+		return ROR;
 
+	if (streq(tok, "orc.b"))
+		return ORC_B;
+	if (streq(tok, "rev8"))
+		return REV8;
+	//*****************
+	// 111064528 : 17~24
+	if (streq(tok, "rori"))
+		return RORI;
+	if (streq(tok, "bclr"))
+		return BCLR;
+	if (streq(tok, "bclri"))
+		return BCLRI;
+	if (streq(tok, "bext"))
+		return BEXT;
+	if (streq(tok, "bexti"))
+		return BEXTI;
+	if (streq(tok, "binv"))
+		return BINV;
+	if (streq(tok, "binvi"))
+		return BINVI;
+	if (streq(tok, "bset"))
+		return BSET;
+	//*****************
+    //112062674
+
+    if ( streq(tok , "bseti")) return BSETI;
+    if ( streq(tok , "sextb")) return SEXTB;
+    if ( streq(tok , "sexth")) return SEXTH;
+    if ( streq(tok , "sh1add")) return SH1ADD;
+    if ( streq(tok , "sh2add")) return SH2ADD;
+    if ( streq(tok , "sh3add")) return SH3ADD;
+    if ( streq(tok , "xnor")) return XNOR;
+    if ( streq(tok , "zexth")) return ZEXTH;
+    //*****************
 
 	// 2r->1r
 	if ( streq(tok, "add") ) return ADD;
@@ -562,42 +620,178 @@ int parse_instr(int line, char* ftok, instr* imem, int memoff, label_loc* labels
 
 		switch( op ) {
 			case UNIMPL: return 1;
+		// instruction added
+		case ANDN:
+		case CLMUL:
+		case CLMULH:
+		case CLMULR:
+		case MAX:
+		{
+			if (!o1 || !o2 || !o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			i->a3.reg = parse_reg(o3, line);
+			return 1;
+		}
+		case CPOP:
+		case CTZ:
+		case CLZ:
+			if (!o1 || !o2 || o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			return 1;
+		//****************
+		// instruction added
+		case MAXU:
+		case MIN:
+		case MINU:
+		case ORN:
+		case ROL:
+		case ROR:
+			if (!o1 || !o2 || !o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			i->a3.reg = parse_reg(o3, line);
+			return 1;
+		case ORC_B:
+		case REV8:
+			if (!o1 || !o2 || o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			return 1;
+		//****************
+		// 111064528: 17 ~ 24
+		case RORI:
+			if (!o1 || !o2 || !o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			i->a3.imm = parse_uimm(o3, 5, line);
+			return 1;
 
-			// instruction added, we skip the implementation of vector mask function 
-			case VLE8_V:
+		case BCLR:
+			if (!o1 || !o2 || !o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			i->a3.reg = parse_reg(o3, line);
+			return 1;
 
-				if ( !o1 || !o2 || o3 || o4 ) print_syntax_error( line, "Vector Operation Invalid format" );
-				i->a1.reg = parse_vector_reg(o1, line);
-				parse_mem(o2, &i->a2.reg, &i->a3.imm, 12, line);
-				return 1;
+		case BCLRI:
+			if (!o1 || !o2 || !o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			i->a3.imm = parse_uimm(o3, 5, line);
+			return 1;
 
-			case VSE8_V:
-				if ( !o1 || !o2 || o3 || o4 ) print_syntax_error( line, "Vector Operation Invalid format" );
-				i->a1.reg = parse_vector_reg(o1, line);
-				parse_mem(o2, &i->a2.reg, &i->a3.imm, 12, line);
-				return 1;
+		case BEXT:
+			if (!o1 || !o2 || !o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			i->a3.reg = parse_reg(o3, line);
+			return 1;
 
-			case VADD_VV:
-				if ( !o1 || !o2 || !o3 || o4 ) print_syntax_error( line, "Invalid format" );
-				i->a1.reg = parse_vector_reg(o1, line);
-				i->a2.reg = parse_vector_reg(o2, line);
-				i->a3.reg = parse_vector_reg(o3, line);
-				return 1;
+		case BEXTI:
+			if (!o1 || !o2 || !o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			i->a3.imm = parse_uimm(o3, 5, line);
+			return 1;
 
-			case VMUL_VX:
-				if ( !o1 || !o2 || !o3 || o4 ) print_syntax_error( line, "Invalid format" );
-				i->a1.reg = parse_vector_reg(o1, line);
-				i->a2.reg = parse_vector_reg(o2, line);
-				i->a3.reg = parse_reg(o3, line);
-				return 1;
+		case BINV:
+			if (!o1 || !o2 || !o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			i->a3.reg = parse_reg(o3, line);
+			return 1;
 
-			case MUL:
-		        if ( !o1 || !o2 || !o3 || o4 ) print_syntax_error( line,  "Invalid format" );
-		        i->a1.reg = parse_reg(o1 , line);
-		        i->a2.reg = parse_reg(o2 , line);
-		        i->a3.reg = parse_reg(o3 , line);
-		        return 1;
+		case BINVI:
+			if (!o1 || !o2 || !o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			i->a3.imm = parse_uimm(o3, 5, line);
+			return 1;
+
+		case BSET:
+			if (!o1 || !o2 || !o3 || o4)
+				print_syntax_error(line, "Invalid format");
+			i->a1.reg = parse_reg(o1, line);
+			i->a2.reg = parse_reg(o2, line);
+			i->a3.reg = parse_reg(o3, line);
+			return 1;
 			//****************
+			//112062674
+        case BSETI:
+            if ( !o1 || !o2 || !o3 || o4 ) print_syntax_error( line, "Invalid format" );
+            if ( !o1 || !o2 || !o3 || o4 ) print_syntax_error( line, "Invalid format" );
+
+            i->a1.reg = parse_reg(o1, line);
+            i->a2.reg = parse_reg(o2, line);
+            i->a3.imm = signextend(parse_imm(o3, 5, line), 5);
+            return 1;
+
+
+         case SEXTB:
+            if ( !o1 || !o2 || o3 || o4 ) print_syntax_error( line, "Invalid format" );
+
+            i->a1.reg = parse_reg(o1, line);
+            i->a2.reg = parse_reg(o2, line);
+            return 1;
+
+
+         case SEXTH:
+            if ( !o1 || !o2 || o3 || o4 ) print_syntax_error( line, "Invalid format" );
+
+            i->a1.reg = parse_reg(o1, line);
+            i->a2.reg = parse_reg(o2, line);
+            return 1;
+
+
+         case SH1ADD:
+             if ( !o1 || !o2 || !o3 || o4 ) print_syntax_error( line,  "Invalid format" );
+                i->a1.reg = parse_reg(o1 , line);
+                i->a2.reg = parse_reg(o2 , line);
+                i->a3.reg = parse_reg(o3 , line);
+             return 1;
+
+         case SH2ADD:
+             if ( !o1 || !o2 || !o3 || o4 ) print_syntax_error( line,  "Invalid format" );
+                i->a1.reg = parse_reg(o1 , line);
+                i->a2.reg = parse_reg(o2 , line);
+                i->a3.reg = parse_reg(o3 , line);
+             return 1;
+
+         case SH3ADD:
+             if ( !o1 || !o2 || !o3 || o4 ) print_syntax_error( line,  "Invalid format" );
+                i->a1.reg = parse_reg(o1 , line);
+                i->a2.reg = parse_reg(o2 , line);
+                i->a3.reg = parse_reg(o3 , line);
+             return 1;
+
+         case XNOR:
+             if ( !o1 || !o2 || !o3 || o4 ) print_syntax_error( line,  "Invalid format" );
+                i->a1.reg = parse_reg(o1 , line);
+                i->a2.reg = parse_reg(o2 , line);
+                i->a3.reg = parse_reg(o3 , line);
+             return 1;
+
+         case ZEXTH:
+            if ( !o1 || !o2 || o3 || o4 ) print_syntax_error( line, "Invalid format" );
+
+            i->a1.reg = parse_reg(o1, line);
+            i->a2.reg = parse_reg(o2, line);
+            return 1;
+
+			//********************
 
 
 			case JAL:
@@ -841,47 +1035,301 @@ void execute(uint8_t* mem, instr* imem, label_loc* labels, int label_count, bool
 		}
 		
 		int pc_next = pc + 4;
+		uint32_t shamt = 0;
+		uint32_t mask = 31;
+		uint32_t orc_output = 0;
+		uint32_t orc_mask = 0;
+		uint32_t partial_intput = 0;
+		uint32_t rev8_output = 0;
+		uint32_t rev8_partial = 0;
+		uint32_t rev8_mask = 0;
+		uint32_t index;
 		switch (i.op) {
 
-			//instruction added
-      		case VLE8_V:
-      			for (int k=0; k<VLMAX; k++) {
-      				uint32_t rv = mem_read(mem, rf[i.a2.reg]+i.a3.imm+k, i.op);
-      				vrf[i.a1.reg].bytes[k] = (uint8_t) rv;
-      			}
-      		break;
+		case ANDN:
+			rf[i.a1.reg] = rf[i.a2.reg] & (~rf[i.a3.reg]);
+			break;
+		case MAX:
+			// printf("max!!\n");
+			// printf("rf[i.a2.reg] = 0x%x\n", rf[i.a2.reg]);
+			// printf("rf[i.a3.reg] = 0x%x\n", rf[i.a3.reg]);
+			rf[i.a1.reg] = ((int32_t)rf[i.a2.reg]) < ((int32_t)rf[i.a3.reg]) ? ((int32_t)rf[i.a3.reg]) : ((int32_t)rf[i.a2.reg]);
+			// printf("rf[i.a1.reg] = 0x%x\n", rf[i.a1.reg]);
+			break;
+		case CPOP:
+		{
+			printf("cpop\n");
+			int count = 0;
+			uint32_t num = rf[i.a2.reg];
+			while (num != 0)
+			{
+				if (num & 1)
+				{
+					count++;
+				}
+				num >>= 1;
+			}
+			rf[i.a1.reg] = count;
+			break;
+		}
+		case CLZ:
+		{
+			printf("clz\n");
+			printf("rf[i.a2.reg] = 0x%x\n", rf[i.a2.reg]);
+			uint32_t mask = 0x80000000;
+			uint32_t num = 32;
+			for (int bit = 31; bit >= 0; --bit, mask >>= 1)
+			{
+				if (rf[i.a2.reg] & mask)
+				{
+					num = 31 - bit;
+					break;
+				}
+			}
+			rf[i.a1.reg] = num;
+			printf("rf[i.a1.reg] = 0x%x\n", rf[i.a1.reg]);
+			break;
+		}
+		case CTZ:
+		{
+			// printf("ctz\n");
+			// printf("rf[i.a2.reg] = 0x%x\n", rf[i.a2.reg]);
+			uint32_t mask = 1;
+			int bit;
+			for (bit = 0; bit < 32; ++bit, mask <<= 1)
+			{
+				if (rf[i.a2.reg] & mask)
+				{
+					rf[i.a1.reg] = bit;
+					break;
+				}
+			}
+			rf[i.a1.reg] = bit;
+			// printf("rf[i.a1.reg] = 0x%x\n", rf[i.a1.reg]);
+			break;
+		}
 
-      		case VSE8_V:
-      			uint8_t temp_sw[VLMAX];
-      			for (int k=0; k<VLMAX; k++) {
-      				temp_sw[k] = (uint8_t) (vrf[i.a1.reg].bytes[k]) ;
-      				mem_write(mem, rf[i.a2.reg]+i.a3.imm+k,(uint32_t) temp_sw[k], i.op);
-      			};
-      		break;
+		case CLMUL:
+		{
+			uint32_t rs1 = rf[i.a2.reg];
+			uint32_t rs2 = rf[i.a3.reg];
+			uint32_t rd = 0;
+			for (int bit = 0; bit < 32; ++bit)
+			{
+				rd = ((rs2 >> bit) & 1) ? (rd ^ rs1 << bit) : rd;
+			}
+			rf[i.a1.reg] = rd;
+			break;
+		}
+		case CLMULR:
+		{
+			// uint64_t rs1_ = (uint64_t)rf[i.a2.reg];
+			// uint64_t rs2_ = (uint64_t)rf[i.a3.reg];
+			// uint64_t rd_ = 0;
+			// for (int bit = 0; bit < 32; ++bit)
+			// {
+			// 	rd_ = ((rs2_ >> bit) & 1) ? (rd_ ^ rs1_ << bit) : rd_;
+			// }
+			// printf("64res : 0x%llx\n", rd_);
+			uint32_t rs1 = rf[i.a2.reg];
+			uint32_t rs2 = rf[i.a3.reg];
+			uint32_t rd = 0;
+			printf("rf[i.a2.reg] = 0x%x\n", rf[i.a2.reg]);
+			printf("rf[i.a3.reg] = 0x%x\n", rf[i.a3.reg]);
+			for (int bit = 0; bit < 32; ++bit)
+			{
+				rd = ((rs2 >> bit) & 1) ? (rd ^ (rs1 >> (32 - bit - 1))) : rd;
+			}
+			rf[i.a1.reg] = rd;
+			break;
+		}
+		case CLMULH:
+		{
+			// uint64_t rs1_ = (uint64_t)rf[i.a2.reg];
+			// uint64_t rs2_ = (uint64_t)rf[i.a3.reg];
+			// uint64_t rd_ = 0;
+			// for (int bit = 0; bit < 32; ++bit)
+			// {
+			// 	rd_ = ((rs2_ >> bit) & 1) ? (rd_ ^ rs1_ << bit) : rd_;
+			// }
+			// printf("64res : 0x%llx\n", rd_);
 
-      		case VADD_VV:
-      			uint8_t src1, src2;
-      			for (int k=0; k<VLMAX; k++) {
-      				src1 = (uint8_t) (vrf[i.a2.reg].bytes[k]) ;
-      				src2 = (uint8_t) (vrf[i.a3.reg].bytes[k]) ;
-      				vrf[i.a1.reg].bytes[k] = src1 + src2;
-      			};
-      		break;
+			uint32_t rs1 = rf[i.a2.reg];
+			uint32_t rs2 = rf[i.a3.reg];
+			uint32_t rd = 0;
 
-      		case VMUL_VX:
-      			uint8_t src1_m;
-      			uint8_t src2_m ;
-      			for (int k=0; k<VLMAX; k++) {
-      				src1_m = (uint8_t) (vrf[i.a2.reg].bytes[k]) ;
-      				src2_m = (uint8_t) (rf[i.a3.reg]) ;
-      				vrf[i.a1.reg].bytes[k] = src1_m * src2_m;
-      			};
-      		break;
+			for (int bit = 1; bit < 32; ++bit)
+			{
+				if ((rs2 >> bit) & 1)
+				{
+					rd = rd ^ (rs1 >> (32 - bit));
+				}
+				// rd = ((rs2 >> bit) & 1) ? (rd ^ (rs1 >> (32 - bit))) : rd;
+			}
+			printf("rf[i.a1.reg] = 0x%x\n", rf[i.a1.reg]);
+			rf[i.a1.reg] = rd;
+			break;
+		}
 
-      		case MUL: rf[i.a1.reg] = rf[i.a2.reg] * rf[i.a3.reg]; break;
+		//*****************
+		// instruction added
+		case MAXU:
+			(uint32_t) rf[i.a2.reg] > (uint32_t)rf[i.a3.reg] ? rf[i.a1.reg] = rf[i.a2.reg] : rf[i.a1.reg] = rf[i.a3.reg];
+			break;
+		case MIN:
+			(int32_t) rf[i.a2.reg] < (int32_t)rf[i.a3.reg] ? rf[i.a1.reg] = rf[i.a2.reg] : rf[i.a1.reg] = rf[i.a3.reg];
+			break;
+		case MINU:
+			(uint32_t) rf[i.a2.reg] < (uint32_t)rf[i.a3.reg] ? rf[i.a1.reg] = rf[i.a2.reg] : rf[i.a1.reg] = rf[i.a3.reg];
+			break;
+		case ORN:
+			rf[i.a1.reg] = rf[i.a2.reg] | ~(rf[i.a3.reg]);
+			break;
+		case ROL:
+			// get least 5 bit of rs2
+			shamt = rf[i.a3.reg] & mask;
+			rf[i.a1.reg] = (rf[i.a2.reg] << shamt) | (rf[i.a2.reg] >> (32 - shamt));
+			break;
+		case ROR:
+			// get least 5 bit of rs2
+			shamt = rf[i.a3.reg] & mask;
+			rf[i.a1.reg] = (rf[i.a2.reg] >> shamt) | (rf[i.a2.reg] << (32 - shamt));
+			break;
+		case ORC_B:
+			// mask
+			for (int byte = 0; byte < 4; byte++)
+			{
+				orc_mask = 0;
+				for (int i = 0; i < 4; i++)
+				{
+					if (i == byte)
+					{
+						orc_mask |= 0xFF << (i * 8);
+					}
+					else
+					{
+						orc_mask &= ~(0xFF << (i * 8));
+					}
+				}
+				// partial_intput
+				partial_intput = rf[i.a2.reg] & orc_mask;
+				if (partial_intput == 0)
+				{
+					orc_output = orc_output | 0x00 << (byte * 8);
+				}
+				else
+				{
+					orc_output = orc_output | 0xFF << (byte * 8);
+				}
+			}
+			rf[i.a1.reg] = orc_output;
+			break;
+		case REV8:
+			rev8_partial = rf[i.a2.reg];
+			for (int i = 0; i < 4; i++)
+			{
+				rev8_output |= (rev8_partial & 0xFF) << ((3 - i) * 8);
+				rev8_partial >>= 8;
+			}
+			rf[i.a1.reg] = rev8_output;
+			break;
 			//*****************
+			// 111064528 : 17~24
+
+		case RORI:
+			// rs1 rotate right with immediate value
+			rf[i.a1.reg] = (rf[i.a2.reg] >> i.a3.imm) | (rf[i.a2.reg] << (32 - i.a3.imm));
+			break;
+
+		case BCLR:
+			// rs1 with a single bit cleared at the index specified in rs2
+			index = rf[i.a3.reg] & 31;
+			rf[i.a1.reg] = rf[i.a2.reg] & ~(1 << index);
+			break;
+
+		case BCLRI:
+			// rs1 with a single bit cleared at the index of immediate value
+			rf[i.a1.reg] = rf[i.a2.reg] & ~(1 << i.a3.imm);
+			break;
+
+		case BEXT:
+			// single bit extracted from rs1 at the index specified in rs2.
+			index = rf[i.a3.reg] & 31;
+			rf[i.a1.reg] = (rf[i.a2.reg] >> index) & 1;
+			break;
+
+		case BEXTI:
+			// single bit extracted from rs1 at the index of immediate value
+			rf[i.a1.reg] = (rf[i.a2.reg] >> i.a3.imm) & 1;
+			break;
+
+		case BINV:
+			// rs1 with a single bit inverted at the index specified in rs2
+			index = rf[i.a3.reg] & 31;
+			rf[i.a1.reg] = rf[i.a2.reg] ^ (1 << index);
+			break;
+
+		case BINVI:
+			// rs1 with a single bit inverted at the index of immediate value
+			rf[i.a1.reg] = rf[i.a2.reg] ^ (1 << i.a3.imm);
+			break;
+
+		case BSET:
+			//  rs1 with a single bit set at the index specified in rs2
+			index = rf[i.a3.reg] & 31;
+			rf[i.a1.reg] = rf[i.a2.reg] | (1 << index);
+			break;
+			//*****************
+            //112062674
+        case BSETI:
+            rf[i.a1.reg] = rf[i.a2.reg] | (1 << i.a3.imm);
+            break;
+        //case BSETI: rf[i.a1.reg] = rf[i.a2.reg] + i.a3.imm; break;
 
 
+        case SEXTB:
+            if((rf[i.a2.reg] << 24)>>31 == 1) //test index 7
+                rf[i.a1.reg] = (rf[i.a2.reg] << 24)>>24 | (-256);
+            else
+                rf[i.a1.reg] = (rf[i.a2.reg] << 24)>>24;
+
+            break;
+
+
+        case SEXTH:
+            if((rf[i.a2.reg] << 16)>>31 == 1) //test index 15
+                rf[i.a1.reg] = (rf[i.a2.reg] << 16)>>16 | (-65536);
+            else
+                rf[i.a1.reg] = (rf[i.a2.reg] << 16)>>16;
+
+            break;
+
+
+        case SH1ADD:
+            rf[i.a1.reg] = rf[i.a3.reg] + (rf[i.a2.reg] << 1);
+
+            break;
+
+        case SH2ADD:
+            rf[i.a1.reg] = rf[i.a3.reg] + (rf[i.a2.reg] << 2);
+            break;
+
+        case SH3ADD:
+            rf[i.a1.reg] = rf[i.a3.reg] + (rf[i.a2.reg] << 3);
+
+            break;
+
+        case XNOR:
+            rf[i.a1.reg] = ~(rf[i.a2.reg] ^ rf[i.a3.reg]);
+
+            break;
+
+        case ZEXTH:
+            rf[i.a1.reg] = (rf[i.a2.reg] << 16)>>16;
+
+            break;
+
+			//******************
 
 			case ADD: rf[i.a1.reg] = rf[i.a2.reg] + rf[i.a3.reg]; break;
 			case SUB: rf[i.a1.reg] = rf[i.a2.reg] - rf[i.a3.reg]; break;
