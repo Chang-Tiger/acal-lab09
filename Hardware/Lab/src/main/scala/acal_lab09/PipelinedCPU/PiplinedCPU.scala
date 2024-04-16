@@ -82,7 +82,7 @@ class PiplinedCPU(memAddrWidth: Int, memDataWidth: Int) extends Module {
 
     // === ID stage reg ==============================================================
     stage_ID.io.Flush := contorller.io.Flush_BH    // Flush when Branch Misss
-    stage_ID.io.Stall := contorller.io.Flush_WB_ID_DH    // Stall when Data Hazard
+    stage_ID.io.Stall := io.Stall_DH    // Stall when Data Hazard
     stage_ID.io.inst_in := datapath_IF.io.inst
     stage_ID.io.pc_in := stage_IF.io.pc
 
