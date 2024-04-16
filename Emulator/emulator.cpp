@@ -12,6 +12,24 @@
 #include "linenoise.hpp"
 
 
+uint32_t parse_uimm(char *tok, int bits, int line, bool strict = true)
+{
+	if (!(tok[0] >= '0' && tok[0] <= '9') && strict)
+	{
+		print_syntax_error(line, "Malformed immediate value");
+	}
+	long int imml = strtol(tok, NULL, 0);
+
+	if (imml > ((1 << bits) - 1) || imml < 0)
+	{
+		printf("Syntax error at token %s\n", tok);
+		exit(1);
+	}
+	uint64_t uv = *(uint64_t *)&imml;
+	uint32_t hv = (uv & UINT32_MAX);
+
+	return hv;
+}
 
 bool streq(char* s, const char* q) {
 	if ( strcmp(s,q) == 0 ) return true;
@@ -268,10 +286,6 @@ void mem_write(uint8_t* mem, uint32_t addr, uint32_t data, instr_type op) {
 		case SB: bytes = 1; break;
 		case SH: bytes = 2; break;
 		case SW: bytes = 4; break;
-
-		// instruction added
-		case VSE8_V: bytes = 1; break;
-		//
 	}
 	if ( addr < MEM_BYTES && addr + bytes <= MEM_BYTES ) {
 		switch (op ) {
@@ -281,10 +295,6 @@ void mem_write(uint8_t* mem, uint32_t addr, uint32_t data, instr_type op) {
 				*(uint32_t*)&(mem[addr]) = data;
 				//printf( "Writing %x to addr %x\n", rf[i.a1.reg], rf[i.a2.reg]+i.a3.imm );
 			break;
-
-			// instruction added
-			case VSE8_V: mem[addr] = *(uint8_t*)&(data); break;
-			//*****************
 		}
 	} else if ( addr == MEM_BYTES ) {
 		printf( "[System output]: 0x%x\n", data );
@@ -302,10 +312,6 @@ uint32_t mem_read(uint8_t* mem, uint32_t addr, instr_type op) {
 		case LH:
 		case LHU: bytes = 2; break;
 		case LW:  bytes = 4; break;
-
-		// instruction added
-		case VLE8_V: bytes = 1; break;
-		//*********************
 	}
 	if ( addr + bytes <= MEM_BYTES ) {
 		switch(op) {
@@ -326,10 +332,6 @@ uint32_t mem_read(uint8_t* mem, uint32_t addr, instr_type op) {
 				ret = *(uint32_t*)&(mem[addr]); 
 				//printf( "Reading %x from addr %x\n", rf[i.a1.reg], rf[i.a2.reg]+i.a3.imm );
 			break;
-
-			// instruction added
-			case VLE8_V: ret = signextend(mem[addr], 8); break;
-			//**********************
 		}
 	}
 	//printf( "Reading %x from %d\n", ret, addr );
