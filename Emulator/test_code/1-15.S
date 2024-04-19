@@ -67,13 +67,13 @@ MAXU_test10:
 SEXTB_test11:
     addi    a1, a1, 1
     addi    t1, x0,0xfe
-    sextb   t0, t1
+    sext.b   t0, t1
     addi    t2, x0,-2
     bne     t0,t2,EXIT
 SEXTH_test12:
     addi    a1, a1, 1
     addi    t1, x0,0xfe
-    sexth   t0, t1
+    sext.h   t0, t1
     bne     t0,t1,EXIT
 
 BSET_test13:
