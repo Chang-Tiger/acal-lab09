@@ -109,7 +109,7 @@ void translate_to_machine_code(uint8_t *mem, instr *imem, char *argv1)
 		case CPOP:
 			binary = (0x04 << 2) + 0x03; // opcode
 			binary += i.a1.reg << 7;	 // rd
-			binary += 0b111 << 12;		 // funct3
+			binary += 0b001 << 12;		 // funct3
 			binary += i.a2.reg << 15;
 			binary += 0b00010 << 20;
 			binary += 0b0110000 << 25;
