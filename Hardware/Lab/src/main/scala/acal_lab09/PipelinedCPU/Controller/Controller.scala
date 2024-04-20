@@ -71,6 +71,7 @@ class Controller(memAddrWidth: Int) extends Module {
   val EXE_opcode = io.EXE_Inst(6, 0)
   val EXE_funct3 = io.EXE_Inst(14, 12)
   val EXE_funct7 = io.EXE_Inst(31, 25)
+  val EXE_rs2 = io.EXE_Inst(24,20)
 
   val MEM_opcode = io.MEM_Inst(6, 0)
   val MEM_funct3 = io.MEM_Inst(14, 12)
@@ -152,9 +153,17 @@ class Controller(memAddrWidth: Int) extends Module {
   // Control signal - ALU operation
   io.E_ALUSel := MuxLookup(EXE_opcode, (Cat(0.U(7.W), "b11111".U, 0.U(3.W))), Seq(
     OP -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),
+    // OP -> MuxLookup(EXE_funct3, (Cat(EXE_funct7, "b11111".U, EXE_funct3)), Seq(
+    //   "b111".U(3.W) -> MuxLookup(EXE_funct7, (Cat(EXE_funct7, "b11111".U, EXE_funct3)), Seq(
+    //     "b0100000".U(7.W) -> (Cat(EXE_funct7, "b11111".U, EXE_funct3))// ANDN
+    //   ))
+    // )),
     OP_IMM -> MuxLookup(EXE_funct3, (Cat(0.U(7.W), "b11111".U, EXE_funct3)), Seq(
             "b101".U(3.W) -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),  // for srai
-          )),
+            "b001".U(3.W) -> (Cat(0.U(7.W), EXE_rs2, EXE_funct3)),
+            "b111".U(3.W) -> (Cat(0.U(7.W), EXE_rs2, EXE_funct3)),
+            )),
+    
   )) 
 
   // Control signal - Data Memory
