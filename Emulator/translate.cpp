@@ -314,7 +314,7 @@ void translate_to_machine_code(uint8_t *mem, instr *imem, char *argv1)
 		case ZEXTH:
 			binary = 0b0110011;		   // opcode
 			binary += i.a1.reg << 7;   // rd
-			binary += 0b000 << 12;	   // funct3
+			binary += 0b100 << 12;	   // funct3
 			binary += i.a2.reg << 15;  // rs1
 			binary += 0b00000 << 20;   // rs2
 			binary += 0b0000100 << 25; // funct7
@@ -322,7 +322,7 @@ void translate_to_machine_code(uint8_t *mem, instr *imem, char *argv1)
 		case ORC_B:
 			binary = 0b0010011;		   // opcode
 			binary += i.a1.reg << 7;   // rd
-			binary += 0b000 << 12;	   // funct3
+			binary += 0b101 << 12;	   // funct3
 			binary += i.a2.reg << 15;  // rs1
 			binary += 0b00111 << 20;   // rs2
 			binary += 0b0010100 << 25; // funct7
