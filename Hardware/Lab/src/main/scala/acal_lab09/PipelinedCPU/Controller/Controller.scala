@@ -158,9 +158,14 @@ class Controller(memAddrWidth: Int) extends Module {
     //     "b0100000".U(7.W) -> (Cat(EXE_funct7, "b11111".U, EXE_funct3))// ANDN
     //   ))
     // )),
-    OP_IMM -> MuxLookup(EXE_opcode, (Cat(0.U(7.W), "b1".U, "b11111".U, EXE_funct3)), Seq( //需要跟上面有分別，所以加上b1
-            "b101".U(3.W) -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),  // for srai
-            "b001".U(3.W) -> (Cat(0.U(7.W), EXE_rs2, EXE_funct3)),
+    OP_IMM -> MuxLookup(EXE_funct3, (Cat(0.U(7.W), "b11111".U, EXE_funct3)), Seq(
+            // "b101".U(3.W) -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),  // for srai
+            "b101".U(3.W) -> MuxLookup(EXE_funct7(6, 2), (Cat(0.U(7.W), EXE_funct7(6, 2), EXE_funct3)), Seq(
+              "b01000".U(5.W) -> (Cat(0.U(7.W), EXE_rs2, EXE_funct3)), // for srai
+            )),
+            "b001".U(3.W) -> MuxLookup(EXE_funct7, (Cat(0.U(7.W), EXE_rs2, EXE_funct3)), Seq(
+              "b0110000".U(7.W) -> (Cat(EXE_funct7, EXE_rs2, EXE_funct3)),
+            )),
             "b111".U(3.W) -> (Cat(0.U(7.W), EXE_rs2, EXE_funct3)),
             )),
     
