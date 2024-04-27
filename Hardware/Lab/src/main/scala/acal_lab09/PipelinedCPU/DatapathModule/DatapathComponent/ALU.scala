@@ -31,7 +31,7 @@ class ALU extends Module{
     // added by funfish
     is(CTZ ){io.out := Mux(io.src1(0),0.U,Mux(io.src1(1),1.U,Mux(io.src1(2),2.U,Mux(io.src1(3),3.U,Mux(io.src1(4),4.U,Mux(io.src1(5),5.U,Mux(io.src1(6),6.U,Mux(io.src1(7),7.U,Mux(io.src1(8),8.U,Mux(io.src1(9),9.U,Mux(io.src1(10),10.U,Mux(io.src1(11),11.U,Mux(io.src1(12),12.U,Mux(io.src1(13),13.U,Mux(io.src1(14),14.U,Mux(io.src1(15),15.U,Mux(io.src1(16),16.U,Mux(io.src1(17),17.U,Mux(io.src1(18),18.U,Mux(io.src1(19),19.U,Mux(io.src1(20),20.U,Mux(io.src1(21),21.U,Mux(io.src1(22),22.U,Mux(io.src1(23),23.U,Mux(io.src1(24),24.U,Mux(io.src1(25),25.U,Mux(io.src1(26),26.U,Mux(io.src1(27),27.U,Mux(io.src1(28),28.U,Mux(io.src1(29),29.U,Mux(io.src1(30),30.U,Mux(io.src1(31),31.U, 32.U))))))))))))))))))))))))))))))))}
     is(CLZ ){io.out := Mux(io.src1(31),0.U,Mux(io.src1(30),1.U,Mux(io.src1(29),2.U,Mux(io.src1(28),3.U,Mux(io.src1(27),4.U,Mux(io.src1(26),5.U,Mux(io.src1(25),6.U,Mux(io.src1(24),7.U,Mux(io.src1(23),8.U,Mux(io.src1(22),9.U,Mux(io.src1(21),10.U,Mux(io.src1(20),11.U,Mux(io.src1(19),12.U,Mux(io.src1(18),13.U,Mux(io.src1(17),14.U,Mux(io.src1(16),15.U,Mux(io.src1(15),16.U,Mux(io.src1(14),17.U,Mux(io.src1(13),18.U,Mux(io.src1(12),19.U,Mux(io.src1(11),20.U,Mux(io.src1(10),21.U,Mux(io.src1(9),22.U,Mux(io.src1(8),23.U,Mux(io.src1(7),24.U,Mux(io.src1(6),25.U,Mux(io.src1(5),26.U,Mux(io.src1(4),27.U,Mux(io.src1(3),28.U,Mux(io.src1(2),29.U,Mux(io.src1(1),30.U,Mux(io.src1(0),31.U, 32.U))))))))))))))))))))))))))))))))}
-    is(CPOP){io.out := (io.src1(0).asUInt) + (io.src1(1).asUInt) + (io.src1(2).asUInt) + (io.src1(3).asUInt) + (io.src1(4).asUInt) + (io.src1(5).asUInt) + (io.src1(6).asUInt) + (io.src1(7).asUInt) + (io.src1(8).asUInt) + (io.src1(9).asUInt) + (io.src1(10).asUInt) + (io.src1(11).asUInt) + (io.src1(12).asUInt) + (io.src1(13).asUInt) + (io.src1(14).asUInt) + (io.src1(15).asUInt) + (io.src1(16).asUInt) + (io.src1(17).asUInt) + (io.src1(18).asUInt) + (io.src1(19).asUInt) + (io.src1(20).asUInt) + (io.src1(21).asUInt) + (io.src1(22).asUInt) + (io.src1(23).asUInt) + (io.src1(24).asUInt) + (io.src1(25).asUInt) + (io.src1(26).asUInt) + (io.src1(27).asUInt) + (io.src1(28).asUInt) + (io.src1(29).asUInt) + (io.src1(30).asUInt) + (io.src1(31).asUInt)}
+    is(CPOP){io.out :=  (((io.src1(0).asUInt)&"hffffffff".U)+ ((io.src1(1).asUInt)&"hffffffff".U)+((io.src1(2).asUInt)&"hffffffff".U)+((io.src1(3).asUInt)&"hffffffff".U)+((io.src1(4).asUInt)&"hffffffff".U)+((io.src1(5).asUInt)&"hffffffff".U)+((io.src1(6).asUInt)&"hffffffff".U)+((io.src1(7).asUInt)&"hffffffff".U)+((io.src1(8).asUInt)&"hffffffff".U)+((io.src1(9).asUInt)&"hffffffff".U)+((io.src1(10).asUInt)&"hffffffff".U)+((io.src1(11).asUInt)&"hffffffff".U)+((io.src1(12).asUInt)&"hffffffff".U)+((io.src1(13).asUInt)&"hffffffff".U)+((io.src1(14).asUInt)&"hffffffff".U)+((io.src1(15).asUInt)&"hffffffff".U)+((io.src1(16).asUInt)&"hffffffff".U)+((io.src1(17).asUInt)&"hffffffff".U)+((io.src1(18).asUInt)&"hffffffff".U)+((io.src1(19).asUInt)&"hffffffff".U)+((io.src1(20).asUInt)&"hffffffff".U)+((io.src1(21).asUInt)&"hffffffff".U)+((io.src1(22).asUInt)&"hffffffff".U)+((io.src1(23).asUInt)&"hffffffff".U)+((io.src1(24).asUInt)&"hffffffff".U)+((io.src1(25).asUInt)&"hffffffff".U)+((io.src1(26).asUInt)&"hffffffff".U)+((io.src1(27).asUInt)&"hffffffff".U)+((io.src1(28).asUInt)&"hffffffff".U)+((io.src1(29).asUInt)&"hffffffff".U)+((io.src1(30).asUInt)&"hffffffff".U)+((io.src1(31).asUInt)&"hffffffff".U))}
     is(SEXTB){io.out := Mux(io.src1(7), Cat("hffffff".U, io.src1(7,0)), io.src1(7,0))}
     is(SEXTH){io.out := Mux(io.src1(15), Cat("hfff".U, io.src1(15, 0)), io.src1(15,0))}
     is(ANDN){io.out := (io.src1 & ~(io.src2))}
@@ -44,6 +44,48 @@ class ALU extends Module{
     is(BSET){io.out := io.src1 | (1.U << (io.src2 & 31.U)(5,0))}
     is(BCLR){io.out := io.src1 & ~(1.U << (io.src2 & 31.U)(5,0))}
     is(BINV){io.out := io.src1 ^ (1.U << (io.src2 & 31.U)(5,0))}
+
+    //16~29 (112062674)
+    is(BEXT){io.out := ((io.src1 >> (io.src2 & 31.U)(5,0)) & 1.U)}
+    is(BSETI){io.out := io.src1 | (1.U << (io.src2 & 31.U)(5,0))}
+    is(BCLRI){io.out := io.src1 & ~(1.U << (io.src2 & 31.U)(5,0))}
+    is(BINVI){io.out := io.src1 ^ (1.U << (io.src2 & 31.U)(5,0))}
+    is(BEXTI){io.out := ((io.src1 >> (io.src2 & 31.U)(5,0)) & 1.U)}
+
+    is(ROR){io.out := ((io.src1 >> io.src2(4,0)) | (io.src1 << (32.U - io.src2)(4,0)))}
+    is(ROL){io.out := ((io.src1 << io.src2(4,0)) | (io.src1 >> (32.U - io.src2)(4,0)))}
+    is(RORI){io.out := ((io.src1 >> io.src2(4,0)) | (io.src1 << (32.U - io.src2)(4,0)))}
+    
+    is(SH1ADD){io.out := (io.src2 + (io.src1 << 1.U))}
+    is(SH2ADD){io.out := (io.src2 + (io.src1 << 2.U))}
+    is(SH3ADD){io.out := (io.src2 + (io.src1 << 3.U))}
+    is(REV8){
+        val temp = Wire(Vec(32,UInt()))
+        for(i <- 0 until 32)
+          temp(i) := io.src1(31.U - i.U)
+        io.out := temp.asUInt
+    }
+    is(ZEXTH){
+        val temp = Wire(Vec(32,UInt()))
+        for(i <- 0 until 16)
+          temp(i) := io.src1(i.U)
+        for(i <- 16 until 32) //left replace 0
+          temp(i) := 0.U
+        io.out := temp.asUInt
+    }
+    is(ORC_B){
+        val temp = Wire(Vec(32,UInt()))
+        for(i <- 0 until 4){ //i*8 = 0, 8, 16, 24
+          if(io.src1((i+1) * 8 - 1, i*8).asUInt == 0.U){
+            for(j <- 0 until 8)
+              temp(i * 8 + j) := 0.U
+          }
+          else
+            for(j <- 0 until 8)
+              temp(i * 8 + j) := 1.U
+        }
+        io.out := temp.asUInt
+    }
   }
 }
 

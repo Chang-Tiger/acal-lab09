@@ -46,11 +46,11 @@ object alu_op_map {
   val SUB = "b0100000_11111_000".U
   val SRA = "b0100000_11111_101".U
   // 擴增指令 I-type
-  val CLZ = "b0000000_00000_001".U
-  val CTZ = "b0000000_00001_001".U
-  val CPOP = "b0000000_00010_001".U
-  val SEXTB = "b0000000_00100_001".U
-  val SEXTH = "b0000000_00101_001".U
+  val CLZ = "b0110000_00000_001".U
+  val CTZ = "b0110000_00001_001".U
+  val CPOP = "b0110000_00010_001".U
+  val SEXTB = "b0110000_00100_001".U
+  val SEXTH = "b0110000_00101_001".U
   // 擴增指令 R-type
   val ANDN = "b0100000_11111_111".U
   val ORN = "b0100000_11111_110".U
@@ -62,6 +62,26 @@ object alu_op_map {
   val BSET = "b0010100_11111_001".U
   val BCLR = "b0100100_11111_001".U
   val BINV = "b0110100_11111_001".U
+
+  //16~29(112062674)
+  val BEXT = "b0100100_11111_101".U
+  val BSETI = "b0000000_00101_001".U
+  val BCLRI = "b0000000_01001_001".U
+  val BINVI = "b0000000_01101_001".U
+  val BEXTI = "b0000000_01001_101".U
+  
+  val ROR = "b0110000_11111_101".U
+  val ROL = "b0110000_11111_001".U
+  val RORI = "b0000000_01100_101".U
+
+  
+  val SH1ADD = "b0010000_11111_010".U
+  val SH2ADD = "b0010000_11111_100".U
+  val SH3ADD = "b0010000_11111_110".U
+  val REV8 = "b0110100_11000_101".U
+  val ZEXTH = "b0000100_00000_100".U
+  val ORC_B = "b0010100_00111_101".U
+
 }
 
 object pc_sel_map {

@@ -1,87 +1,36 @@
 lui x02, 0x00000002
 addi x02, x02, 0x00000710
-lui x11, 0x00000000
-addi x11, x11, 0x00000000
-addi a1, a1, 1
-addi t1, x0, 0
-cpop t2, t1
-bne t2, x0, exit
-addi a1, a1, 1
-addi t1, x0, 0
-clz t2, t1
-addi t3, x0, 32
-bne t3, t2, exit
-addi a1, a1, 1
-addi t1, x0, 0
-ctz t2, t1
-bne t3, t2, exit
-addi a1, a1, 1
-addi t1, x0, 0xa5
-addi t2, x0, 0xf0
-andn t3, t1, t2
-addi t4, x0, 5
-bne t3, t4, exit
-addi a1, a1, 1
-addi t1, x0, 10
-addi t2, x0, -5
-orn t3, t1, t2
-addi t4, x0, 14
-bne t3, t4, exit
-addi a1, a1, 1
-addi t1, x0, 10
-addi t2, x0, -5
-xnor t3, t1, t2
-addi t4, x0, 14
-bne t3, t4, exit
-addi a1, a1, 1
-addi t1, x0, -1
-min t2, t1, x0
-bne t1, t2, exit
-addi a1, a1, 1
-addi t1, x0, -1
-max t2, t1, x0
-bne t2, x0, exit
-addi a1, a1, 1
-addi t1, x0, -1
-minu t2, t1, x0
-bne x0, t2, exit
-addi a1, a1, 1
-addi t1, x0, -1
-maxu t2, t1, x0
-bne t1, t2, exit
-addi a1, a1, 1
-addi t1, x0, 0xfe
-sextb t0, t1
-addi t2, x0, -2
-bne t0, t2, exit
-addi a1, a1, 1
-addi t1, x0, 0xfe
-sexth t0, t1
-bne t0, t1, exit
-addi a1, a1, 1
-addi t1, x0, 5
-addi t2, x0, 2
-bset t0, t1, t2
-addi t3, x0, 5
-bne t0, t3, exit
-addi a1, a1, 1
-addi t1, x0, 5
-addi t2, x0, 2
-bclr t0, t1, t2
-addi t3, x0, 1
-bne t0, t3, exit
-addi a1, a1, 1
-addi t1, x0, 5
-addi t2, x0, 2
-binv t0, t1, t2
-addi t3, x0, 1
-bne t0, t3, exit
-addi a1, a1, 1
-nop zero, zero, 0
-nop zero, zero, 0
-nop zero, zero, 0
-nop zero, zero, 0
-nop zero, zero, 0
+addi x16, x0, 0xfec
+addi x17, x0, 0x472
+addi x18, x0, 0xab7
+addi x19, x0, 0xda2
+addi x20, x0, 0x561
+addi x21, x0, 0x146
+addi x22, x0, 0x531
+addi x23, x0, 0x456
+addi x24, x0, 0x11
+addi x25, x0, 0x98
+addi x26, x0, 0xa3
+addi x27, x0, 0x10
+addi x28, x0, 0x55
+addi x29, x0, 0xffe
+addi x30, x0, 0x4
+addi x31, x0, 0xff1
+clz x1, x30
+cpop x2, x23
+xnor x3, x16, x17
+min x4, x31, x25
+maxu x5, x19, x30
+sext.b x6, x21
+bseti x7, x29, 0x0
+bclr x8, x31, x30
+binv x9, x16, x24
+bexti x10, x21, 0x2
+rol x11, x16, x30
+rori x12, x23, 0xc
+sh2add x13, x17, x18
+rev8 x14, x25
+orc.b x15, x25
 hcf
 nop
 nop
