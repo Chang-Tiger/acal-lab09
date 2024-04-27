@@ -50,42 +50,32 @@ class ALU extends Module{
     is(BSETI){io.out := io.src1 | (1.U << (io.src2 & 31.U)(5,0))}
     is(BCLRI){io.out := io.src1 & ~(1.U << (io.src2 & 31.U)(5,0))}
     is(BINVI){io.out := io.src1 ^ (1.U << (io.src2 & 31.U)(5,0))}
-    is(BEXTI){io.out := ((io.src1 >> (io.src2 & 31.U)(5,0)) & 1.U)}
+    is(BEXTI){io.out := ((io.src1 >> io.src2(4,0)) & 1.U)}
 
     is(ROR){io.out := ((io.src1 >> io.src2(4,0)) | (io.src1 << (32.U - io.src2)(4,0)))}
     is(ROL){io.out := ((io.src1 << io.src2(4,0)) | (io.src1 >> (32.U - io.src2)(4,0)))}
-    is(RORI){io.out := ((io.src1 >> io.src2(4,0)) | (io.src1 << (32.U - io.src2)(4,0)))}
+    is(RORI){io.out := ((io.src1 >> io.src2(4,0)) | (io.src1 << (32.U - io.src2(4,0))(4,0)))}
     
     is(SH1ADD){io.out := (io.src2 + (io.src1 << 1.U))}
     is(SH2ADD){io.out := (io.src2 + (io.src1 << 2.U))}
     is(SH3ADD){io.out := (io.src2 + (io.src1 << 3.U))}
-    is(REV8){
-        val temp = Wire(Vec(32,UInt()))
-        for(i <- 0 until 32)
-          temp(i) := io.src1(31.U - i.U)
-        io.out := temp.asUInt
-    }
-    is(ZEXTH){
-        val temp = Wire(Vec(32,UInt()))
-        for(i <- 0 until 16)
-          temp(i) := io.src1(i.U)
-        for(i <- 16 until 32) //left replace 0
-          temp(i) := 0.U
-        io.out := temp.asUInt
-    }
-    is(ORC_B){
-        val temp = Wire(Vec(32,UInt()))
-        for(i <- 0 until 4){ //i*8 = 0, 8, 16, 24
-          if(io.src1((i+1) * 8 - 1, i*8).asUInt == 0.U){
-            for(j <- 0 until 8)
-              temp(i * 8 + j) := 0.U
-          }
-          else
-            for(j <- 0 until 8)
-              temp(i * 8 + j) := 1.U
-        }
-        io.out := temp.asUInt
-    }
+    
+    is(REV8){io.out := Cat(io.src1(7, 0), io.src1(15, 8), io.src1(23, 16), io.src1(31, 24))}
+    is(ZEXTH){io.out := 6.U}//{io.out := Cat("hffff".U, io.src1(15,0))}
+    is(ORC_B){io.out := 6.U}
+    // is(ORC_B){
+    //     val temp3 = Wire(Vec(32,UInt()))
+    //     for(i <- 0 until 4){ //i*8 = 0, 8, 16, 24
+    //       if(io.src1((i+1) * 8 - 1, i*8).asUInt == 0.U){
+    //         for(j <- 0 until 8)
+    //           temp3(i * 8 + j) := 1.U
+    //       }
+    //       else
+    //         for(j <- 0 until 8)
+    //           temp3(i * 8 + j) := 1.U
+    //     }
+    //     io.out := temp3.asUInt
+    // }
   }
 }
 

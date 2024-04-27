@@ -79,9 +79,9 @@ object alu_op_map {
   val SH2ADD = "b0010000_11111_100".U
   val SH3ADD = "b0010000_11111_110".U
   val REV8 = "b0110100_11000_101".U
-  val ZEXTH = "b0000100_00000_100".U
-  val ORC_B = "b0010100_00111_101".U
-
+  val ZEXTH = "b0000100_11111_100".U
+  //val ORC_B = "b0010100_00111_101".U
+  val ORC_B = "b0000000_00101_101".U
 }
 
 object pc_sel_map {
