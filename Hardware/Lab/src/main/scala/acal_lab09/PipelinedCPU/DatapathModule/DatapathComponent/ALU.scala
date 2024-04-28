@@ -61,21 +61,15 @@ class ALU extends Module{
     is(SH3ADD){io.out := (io.src2 + (io.src1 << 3.U))}
     
     is(REV8){io.out := Cat(io.src1(7, 0), io.src1(15, 8), io.src1(23, 16), io.src1(31, 24))}
-    is(ZEXTH){io.out := 6.U}//{io.out := Cat("hffff".U, io.src1(15,0))}
-    is(ORC_B){io.out := 6.U}
-    // is(ORC_B){
-    //     val temp3 = Wire(Vec(32,UInt()))
-    //     for(i <- 0 until 4){ //i*8 = 0, 8, 16, 24
-    //       if(io.src1((i+1) * 8 - 1, i*8).asUInt == 0.U){
-    //         for(j <- 0 until 8)
-    //           temp3(i * 8 + j) := 1.U
-    //       }
-    //       else
-    //         for(j <- 0 until 8)
-    //           temp3(i * 8 + j) := 1.U
-    //     }
-    //     io.out := temp3.asUInt
-    // }
+    is(ZEXTH){io.out := Cat("h0000".U, io.src1(15,0))}
+    is(ORC_B){
+        val temp3 = Wire(Vec(32,UInt()))
+        for(i <- 0 until 4){
+            for(j <- 0 until 8)
+              temp3(i * 8 + j) := io.src1(i * 8) | io.src1(i * 8 + 1) | io.src1(i * 8 + 2) | io.src1(i * 8 + 3) | io.src1(i * 8 + 4) | io.src1(i * 8 + 5) | io.src1(i * 8 + 6) | io.src1(i * 8 + 7)
+        }
+        io.out := temp3.asUInt
+    }
   }
 }
 

@@ -31,6 +31,7 @@ class top extends Module {
         val EXE_src2 = Output(UInt(32.W))
         val ALU_src1 = Output(UInt(32.W))
         val ALU_src2 = Output(UInt(32.W))
+        val ALU_ALUSel = Output(UInt(32.W))
         val raddr = Output(UInt(32.W))
         val WB_rd = Output(UInt(5.W))
         val WB_wdata = Output(UInt(32.W))
@@ -81,6 +82,7 @@ class top extends Module {
     io.EXE_src2 := cpu.io.EXE_src2
     io.ALU_src1 := cpu.io.ALU_src1
     io.ALU_src2 := cpu.io.ALU_src2
+    io.ALU_ALUSel := cpu.io.ALU_ALUSel
     io.raddr := cpu.io.DataMem.raddr
     io.WB_rd := cpu.io.WB_rd
     io.WB_wdata := cpu.io.WB_wdata

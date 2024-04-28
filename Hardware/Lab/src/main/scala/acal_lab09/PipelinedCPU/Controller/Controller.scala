@@ -152,17 +152,17 @@ class Controller(memAddrWidth: Int) extends Module {
 
   // Control signal - ALU operation
   io.E_ALUSel := MuxLookup(EXE_opcode, (Cat(0.U(7.W), "b11111".U, 0.U(3.W))), Seq(
-    OP -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),
-    // OP -> MuxLookup(EXE_funct3, (Cat(EXE_funct7, "b11111".U, EXE_funct3)), Seq(
-    //   "b111".U(3.W) -> MuxLookup(EXE_funct7, (Cat(EXE_funct7, "b11111".U, EXE_funct3)), Seq(
-    //     "b0100000".U(7.W) -> (Cat(EXE_funct7, "b11111".U, EXE_funct3))// ANDN
-    //   ))
-    // )),
-    // OP -> MuxLookup(EXE_funct7, (Cat(EXE_funct7, "b11111".U, EXE_funct3)), Seq(
-    //           "b0000100".U(7.W) -> (Cat(EXE_funct7, "b00000".U, EXE_funct3)), //ZEXTH
-    //           )),
-    OP_IMM -> MuxLookup(EXE_funct3, (Cat(0.U(7.W), "b11111".U, EXE_funct3)), Seq(
+    //OP -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),
+    // OP -> (Cat(EXE_funct7, EXE_rs2, EXE_funct3)),
+    OP -> MuxLookup(EXE_rs2, (Cat(EXE_funct7, "b11111".U, EXE_funct3)), Seq(
+              "b00000".U(7.W) -> (Cat(EXE_funct7, EXE_rs2, EXE_funct3))// ZEXTH
+            )),
+    //OP_IMM -> (Cat(EXE_funct7, EXE_rs2, EXE_funct3)),
+    OP_IMM -> MuxLookup(EXE_funct3, (Cat(0.U(7.W), "b11111".U, EXE_funct3)), Seq(//EXE_funct3)), Seq(
             // "b101".U(3.W) -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),  // for srai
+            "b000".U(3.W) -> MuxLookup(EXE_funct7, (Cat(0.U(7.W), "b11111".U, EXE_funct3)), Seq(//(Cat(0.U(7.W), "b11111".U, EXE_funct3)), Seq(
+              "b0110100".U(7.W) -> (Cat(EXE_funct7, EXE_funct7(6, 2), EXE_funct3)),//BINVI
+            )),
             "b101".U(3.W) -> MuxLookup(io.EXE_Inst(31, 27), (Cat(0.U(7.W), EXE_funct7(6, 2), EXE_funct3)), Seq(//EXE_funct7(6, 2), (Cat(0.U(7.W), EXE_funct7(6, 2), EXE_funct3)), Seq(
               "b01000".U(5.W) -> (Cat(0.U(7.W), EXE_rs2, EXE_funct3)), // for srai
               "b01101".U(5.W) -> (Cat(EXE_funct7, EXE_rs2, EXE_funct3)), // for REV8
