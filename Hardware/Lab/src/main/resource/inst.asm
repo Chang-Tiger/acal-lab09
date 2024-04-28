@@ -1,5 +1,3 @@
-lui x02, 0x00000002
-addi x02, x02, 0x00000710
 addi x16, x0, 0xfec
 addi x17, x0, 0x472
 addi x18, x0, 0xab7
@@ -31,6 +29,11 @@ rori x12, x23, 0xc
 sh2add x13, x17, x18
 rev8 x14, x25
 orc.b x15, x25
+nop zero, zero, 0
+nop zero, zero, 0
+nop zero, zero, 0
+nop zero, zero, 0
+nop zero, zero, 0
 hcf
 nop
 nop

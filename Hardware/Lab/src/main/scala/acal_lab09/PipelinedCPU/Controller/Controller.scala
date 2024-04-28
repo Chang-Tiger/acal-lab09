@@ -83,7 +83,7 @@ class Controller(memAddrWidth: Int) extends Module {
   E_En := (EXE_opcode===BRANCH)         // not used
   io.E_En := E_En
 
-  // whether Branch taken 
+  // whether Branch taken
   val E_Branch_taken = Wire(Bool())
   E_Branch_taken := MuxLookup(EXE_opcode, false.B, Seq(
           BRANCH -> MuxLookup(EXE_funct3, false.B, Seq(
@@ -96,16 +96,16 @@ class Controller(memAddrWidth: Int) extends Module {
           )),
           JALR -> true.B,
           JAL -> true.B,
-        )) 
+        ))
   io.E_Branch_taken := E_Branch_taken
-  
+
   // whether Branch Miss
   val Predict_Miss = Wire(Bool())
   Predict_Miss := (E_Branch_taken && io.ID_pc=/=io.EXE_target_pc)
-    
+
   // Control signal - Flush Branch Miss
   io.Flush_BH := Predict_Miss
-    
+
   // Control signal - PC
   when(Predict_Miss){
     io.PCSel := EXE_T_PC
@@ -148,28 +148,33 @@ class Controller(memAddrWidth: Int) extends Module {
     AUIPC -> 1.U,
     LUI -> 1.U,
     LOAD -> 1.U,
-  )) 
+  ))
 
   // Control signal - ALU operation
   io.E_ALUSel := MuxLookup(EXE_opcode, (Cat(0.U(7.W), "b11111".U, 0.U(3.W))), Seq(
-    OP -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),
-    // OP -> MuxLookup(EXE_funct3, (Cat(EXE_funct7, "b11111".U, EXE_funct3)), Seq(
-    //   "b111".U(3.W) -> MuxLookup(EXE_funct7, (Cat(EXE_funct7, "b11111".U, EXE_funct3)), Seq(
-    //     "b0100000".U(7.W) -> (Cat(EXE_funct7, "b11111".U, EXE_funct3))// ANDN
-    //   ))
-    // )),
-    OP_IMM -> MuxLookup(EXE_funct3, (Cat(0.U(7.W), "b11111".U, EXE_funct3)), Seq(
-            // "b101".U(3.W) -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),  // for srai
-            "b101".U(3.W) -> MuxLookup(EXE_funct7(6, 2), (Cat(0.U(7.W), EXE_funct7(6, 2), EXE_funct3)), Seq(
-              "b01000".U(5.W) -> (Cat(0.U(7.W), EXE_rs2, EXE_funct3)), // for srai
+    //OP -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),
+    // OP -> (Cat(EXE_funct7, EXE_rs2, EXE_funct3)),
+    OP -> MuxLookup(EXE_rs2, (Cat(EXE_funct7, "b11111".U, EXE_funct3)), Seq(
+              "b00000".U(7.W) -> (Cat(EXE_funct7, EXE_rs2, EXE_funct3))// ZEXTH
             )),
-            "b001".U(3.W) -> MuxLookup(EXE_funct7, (Cat(0.U(7.W), EXE_rs2, EXE_funct3)), Seq(
+    //OP_IMM -> (Cat(EXE_funct7, EXE_rs2, EXE_funct3)),
+    OP_IMM -> MuxLookup(EXE_funct3, (Cat(0.U(7.W), "b11111".U, EXE_funct3)), Seq(//EXE_funct3)), Seq(
+            // "b101".U(3.W) -> (Cat(EXE_funct7, "b11111".U, EXE_funct3)),  // for srai
+            "b000".U(3.W) -> MuxLookup(EXE_funct7, (Cat(0.U(7.W), "b11111".U, EXE_funct3)), Seq(//(Cat(0.U(7.W), "b11111".U, EXE_funct3)), Seq(
+              "b0110100".U(7.W) -> (Cat(EXE_funct7, EXE_funct7(6, 2), EXE_funct3)),//BINVI
+            )),
+            "b101".U(3.W) -> MuxLookup(io.EXE_Inst(31, 27), (Cat(0.U(7.W), EXE_funct7(6, 2), EXE_funct3)), Seq(//EXE_funct7(6, 2), (Cat(0.U(7.W), EXE_funct7(6, 2), EXE_funct3)), Seq(
+              "b01000".U(5.W) -> (Cat(0.U(7.W), EXE_rs2, EXE_funct3)), // for srai
+              "b01101".U(5.W) -> (Cat(EXE_funct7, EXE_rs2, EXE_funct3)), // for REV8
+              "b00101".U(5.W) -> (Cat(0.U(7.W), io.EXE_Inst(31, 27), EXE_funct3)), // for ORC_B
+            )),
+            "b001".U(3.W) -> MuxLookup(EXE_funct7, (Cat(0.U(7.W), EXE_funct7(6, 2), EXE_funct3)), Seq(//(Cat(0.U(7.W), EXE_rs2, EXE_funct3)), Seq(
               "b0110000".U(7.W) -> (Cat(EXE_funct7, EXE_rs2, EXE_funct3)),
             )),
             "b111".U(3.W) -> (Cat(0.U(7.W), EXE_rs2, EXE_funct3)),
             )),
-    
-  )) 
+
+  ))
 
   // Control signal - Data Memory
   io.DM_Mem_R := (MEM_opcode===LOAD)
@@ -190,7 +195,7 @@ class Controller(memAddrWidth: Int) extends Module {
     AUIPC -> true.B,
     JAL -> true.B,
     JALR -> true.B,
-  )) 
+  ))
 
   // Control signal - Scalar Write Back Value
   io.W_WBSel := MuxLookup(WB_opcode, ALUOUT, Seq(
@@ -209,8 +214,8 @@ class Controller(memAddrWidth: Int) extends Module {
 
   /****************** Data Hazard ******************/
 
-  // Use rs in ID stage 
-  val is_D_use_rs1 = Wire(Bool()) 
+  // Use rs in ID stage
+  val is_D_use_rs1 = Wire(Bool())
   val is_D_use_rs2 = Wire(Bool())
   is_D_use_rs1 := MuxLookup(ID_opcode,false.B,Seq(
     OP -> true.B,
@@ -219,7 +224,7 @@ class Controller(memAddrWidth: Int) extends Module {
     JALR -> true.B,
     LOAD -> true.B,
     STORE -> true.B,
-  ))  
+  ))
   is_D_use_rs2 := MuxLookup(ID_opcode,false.B,Seq(
     OP -> true.B,
     BRANCH -> true.B,
@@ -230,7 +235,7 @@ class Controller(memAddrWidth: Int) extends Module {
   val is_E_use_rd = Wire(Bool())
   val is_M_use_rd = Wire(Bool())
   val is_W_use_rd = Wire(Bool())
-    
+
   is_E_use_rd := MuxLookup(EXE_opcode,false.B,Seq(
     OP -> true.B,
     OP_IMM -> true.B,
@@ -240,7 +245,7 @@ class Controller(memAddrWidth: Int) extends Module {
     JALR -> true.B,
     LOAD -> true.B,
   ))   // To Be Modified
-    
+
   is_M_use_rd := MuxLookup(MEM_opcode,false.B,Seq(
     OP -> true.B,
     OP_IMM -> true.B,
@@ -250,7 +255,7 @@ class Controller(memAddrWidth: Int) extends Module {
     JALR -> true.B,
     LOAD -> true.B,
   ))   // To Be Modified
-    
+
   is_W_use_rd := MuxLookup(WB_opcode,false.B,Seq(
     OP -> true.B,
     OP_IMM -> true.B,
@@ -273,12 +278,12 @@ class Controller(memAddrWidth: Int) extends Module {
   val is_D_rs2_W_rd_overlap = Wire(Bool())
 
   val ID_rs1 = io.ID_Inst(19,15)
-  val ID_rs2 = io.ID_Inst(24,20) 
+  val ID_rs2 = io.ID_Inst(24,20)
 
   val EXE_rd = io.EXE_Inst(11,7)
   val MEM_rd = io.MEM_Inst(11,7)
   val WB_rd = io.WB_Inst(11,7)
-    
+
   is_D_rs1_E_rd_overlap := is_D_use_rs1 && is_E_use_rd && (ID_rs1 === EXE_rd) && (EXE_rd =/= 0.U(5.W))
   is_D_rs2_E_rd_overlap := is_D_use_rs2 && is_E_use_rd && (ID_rs2 === EXE_rd) && (EXE_rd =/= 0.U(5.W))
 
@@ -287,12 +292,12 @@ class Controller(memAddrWidth: Int) extends Module {
 
   is_D_rs1_W_rd_overlap := is_D_use_rs1 && is_W_use_rd && (ID_rs1 === WB_rd) && (WB_rd =/= 0.U(5.W))
   is_D_rs2_W_rd_overlap := is_D_use_rs2 && is_W_use_rd && (ID_rs2 === WB_rd) && (WB_rd =/= 0.U(5.W))
-  
+
   // Control signal - Stall
-  io.Stall_WB_ID_DH := (is_D_rs1_E_rd_overlap || is_D_rs2_E_rd_overlap || is_D_rs1_M_rd_overlap 
+  io.Stall_WB_ID_DH := (is_D_rs1_E_rd_overlap || is_D_rs2_E_rd_overlap || is_D_rs1_M_rd_overlap
                         || is_D_rs2_M_rd_overlap || is_D_rs1_W_rd_overlap || is_D_rs2_W_rd_overlap)
   // Stall for Data Hazard
   io.Flush_WB_ID_DH := io.Stall_WB_ID_DH
-    
+
   /****************** Data Hazard End******************/
 }

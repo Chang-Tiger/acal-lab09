@@ -42,6 +42,7 @@ class topTest(dut:top) extends PeekPokeTester(dut){
         var EXE_src2 = (peek(dut.io.EXE_src2).toInt.toHexString).replace(' ', '0')
         var ALU_src1 = (peek(dut.io.ALU_src1).toInt.toHexString).replace(' ', '0')
         var ALU_src2 = (peek(dut.io.ALU_src2).toInt.toHexString).replace(' ', '0')
+        var ALU_ALUSel = (peek(dut.io.ALU_ALUSel).toInt.toBinaryString).replace(' ', '0')
         var DM_rdata = (peek(dut.io.rdata).toInt.toHexString).replace(' ', '0')
         var DM_raddr = (peek(dut.io.raddr).toInt.toHexString).replace(' ', '0')
         var WB_reg = peek(dut.io.WB_rd).toInt
@@ -61,7 +62,7 @@ class topTest(dut:top) extends PeekPokeTester(dut){
                 s"[EXE src1]${"%8s".format(EXE_src1)} [EXE src2]${"%8s".format(EXE_src2)} "+
                 s"[Br taken] ${"%1d".format(E_BT)} ")
         println(s"                                                  "+
-                s"[ALU src1]${"%8s".format(ALU_src1)} [ALU src2]${"%8s".format(ALU_src2)} "+
+                s"[ALU src1]${"%8s".format(ALU_src1)} [ALU src2]${"%8s".format(ALU_src2)} [ALU ALUSel]${"%15s".format(ALU_ALUSel)} "+
                 s"[ALU Out]${"%8s".format(alu_out)}")
         println(s"[PC_MEM]${"%8d".format(PC_MEM)} [Inst] ${"%-25s".format(lines(PC_MEM>>2))} "+
                 s"[DM Raddr]${"%8s".format(DM_raddr)} [DM Rdata]${"%8s".format(DM_rdata)}")
