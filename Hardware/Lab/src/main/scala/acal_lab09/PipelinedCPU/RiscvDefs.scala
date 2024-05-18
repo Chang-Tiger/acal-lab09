@@ -35,14 +35,14 @@ object inst_type {
 }
 
 object alu_op_map {
-  val ADD = "b0000000_11111_000".U
-  val SLL = "b0000000_11111_001".U
-  val SLT = "b0000000_11111_010".U
-  val SLTU = "b0000000_11111_011".U
-  val XOR = "b0000000_11111_100".U
-  val SRL = "b0000000_11111_101".U
-  val OR = "b0000000_11111_110".U
-  val AND = "b0000000_11111_111".U
+  val ADD = "b0000000_11111_000".U//ADDI
+  val SLL = "b0000000_11111_001".U//SLLI
+  val SLT = "b0000000_11111_010".U//SLTI
+  val SLTU = "b0000000_11111_011".U//SLTIU
+  val XOR = "b0000000_11111_100".U//XORI
+  val SRL = "b0000000_11111_101".U//SRLI
+  val OR = "b0000000_11111_110".U//ORI
+  val AND = "b0000000_11111_111".U//ANDI
   val SUB = "b0100000_11111_000".U
   val SRA = "b0100000_11111_101".U
 }

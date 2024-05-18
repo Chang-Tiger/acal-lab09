@@ -4,6 +4,7 @@ import chisel3._
 import chisel3.util._
 
 import acal_lab09.PiplinedCPU._
+import acal_lab09.PiplinedCPU.wide._
 import acal_lab09.Memory._
 import acal_lab09.MemIF._
 
@@ -16,6 +17,11 @@ class top extends Module {
         val inst = Output(UInt(32.W))
         val rdata = Output(UInt(32.W))
 
+        //added
+        val isRead = Output(Bool())
+        val isWrite = Output(Bool())
+        val LD_ST = Output(UInt(2.W))
+        val data_Length = Output(UInt(4.W))
         // Test
         val E_Branch_taken = Output(Bool())
         val Flush = Output(Bool())
@@ -43,6 +49,19 @@ class top extends Module {
     val im = Module(new InstMem(15))
     val dm = Module(new DataMem(15))
 
+    //isRead/Write data
+    io.isRead := dm.io.isRead
+    io.isWrite := dm.io.isWrite
+    //count load, store
+    io.LD_ST := cpu.io.LD_ST
+    //read/write data length
+    io.data_Length := MuxLookup(cpu.io.DataMem.Length, 0.U, Seq(
+      Byte -> 2.U,
+      Half -> 1.U,
+      Word -> 8.U,
+      UByte -> 2.U,
+      UHalf ->1.U,
+    ))
     // Piplined CPU
     cpu.io.InstMem.rdata := im.io.inst
     cpu.io.DataMem.rdata := dm.io.rdata

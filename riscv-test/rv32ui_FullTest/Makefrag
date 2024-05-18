@@ -20,6 +20,6 @@ rv32ui_FullTest_sc_tests = \
 	sub \
 	xor xori \
 	mergesort \
-	NewASM \
+
 
 rv32ui_FullTest__tests = $(addprefix rv32ui_FullTest-, $(rv32ui_FullTest_sc_tests))

@@ -14,6 +14,9 @@ class DataMem(bits:Int) extends Module {
     val wen   = Input(Bool())
     val waddr = Input(UInt(bits.W))
     val wdata = Input(UInt(32.W))
+    //added
+    val isRead = Output(Bool())
+    val isWrite = Output(Bool())
   })
   val DATA_OFFSET = 1<<bits
 
@@ -38,10 +41,13 @@ class DataMem(bits:Int) extends Module {
     Half -> io.wdata(15,0),
     Word -> io.wdata,
   ))
-
+  io.isWrite := false.B
+  io.isRead := false.B
   srdata := 0.S
-
+  //write
   when(io.wen){
+    io.isWrite := true.B
+    io.isRead := false.B
     when(io.Length===Byte){
       memory(wa) := wd(7,0)
     }.elsewhen(io.Length===Half){
@@ -53,7 +59,9 @@ class DataMem(bits:Int) extends Module {
       memory(wa+2.U(bits.W)) := wd(23,16)
       memory(wa+3.U(bits.W)) := wd(31,24)
     }
-  }.otherwise{
+  }.otherwise{//read
+    io.isWrite := false.B
+    io.isRead := true.B
     srdata := MuxLookup(io.Length,0.S,Seq(
       Byte -> memory(io.raddr).asSInt,
       Half -> Cat(memory((io.raddr & (~(1.U(bits.W)))) +1.U),
@@ -67,5 +75,6 @@ class DataMem(bits:Int) extends Module {
                   memory((io.raddr & ~(1.U(bits.W))) +1.U),
                   memory(io.raddr & ~(1.U(bits.W)))).asSInt
     ))
+
   }
 }

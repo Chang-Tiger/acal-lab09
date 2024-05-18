@@ -1,0 +1,1540 @@
+[info] [0.002] SEED 1713088245354
+[info] [0.010] [PC_IF ]       0 [Inst] li gp,1
+[info] [0.011] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.012] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.012]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.014] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.015] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.015] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.016] ==============================================
+[info] [0.019] [PC_IF ]       4 [Inst] li t1,1
+[info] [0.019] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.020] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.021]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.022] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.022] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.023] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.023] ==============================================
+[info] [0.026] [PC_IF ]       8 [Inst] nop
+[info] [0.027] [PC_ID ]       4 [Inst] li t1,1
+[info] [0.028] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.028]                                                   [ALU src1]       0 [ALU src2]       1 [ALU Out]       1
+[info] [0.029] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.030] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.031] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.031] ==============================================
+[info] [0.034] [PC_IF ]      12 [Inst] nop
+[info] [0.034] [PC_ID ]       8 [Inst] nop
+[info] [0.035] [PC_EXE]       4 [Inst] li t1,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.036]                                                   [ALU src1]       0 [ALU src2]       1 [ALU Out]       1
+[info] [0.037] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       1 [DM Rdata]fffffff0
+[info] [0.038] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.038] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.039] ==============================================
+[info] [0.041] [PC_IF ]      16 [Inst] nop
+[info] [0.042] [PC_ID ]      12 [Inst] nop
+[info] [0.042] [PC_EXE]       8 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.043]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.043] [PC_MEM]       4 [Inst] li t1,1                   [DM Raddr]       1 [DM Rdata]fffffff0
+[info] [0.044] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       3 [WB  data]       1
+[info] [0.045] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.045] ==============================================
+[info] [0.048] [PC_IF ]      20 [Inst] nop
+[info] [0.048] [PC_ID ]      16 [Inst] nop
+[info] [0.049] [PC_EXE]      12 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.049]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.050] [PC_MEM]       8 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.051] [PC_WB ]       4 [Inst] li t1,1                   [ WB reg ]       6 [WB  data]       1
+[info] [0.051] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.052] ==============================================
+[info] [0.054] [PC_IF ]      24 [Inst] nop
+[info] [0.055] [PC_ID ]      20 [Inst] nop
+[info] [0.056] [PC_EXE]      16 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.056]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.057] [PC_MEM]      12 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.058] [PC_WB ]       8 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.058] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.059] ==============================================
+[info] [0.061] [PC_IF ]      28 [Inst] li t2,1
+[info] [0.062] [PC_ID ]      24 [Inst] nop
+[info] [0.062] [PC_EXE]      20 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.063]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.064] [PC_MEM]      16 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.064] [PC_WB ]      12 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.065] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.066] ==============================================
+[info] [0.069] [PC_IF ]      32 [Inst] nop
+[info] [0.070] [PC_ID ]      28 [Inst] li t2,1
+[info] [0.070] [PC_EXE]      24 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.071]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.072] [PC_MEM]      20 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.072] [PC_WB ]      16 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.073] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.073] ==============================================
+[info] [0.075] [PC_IF ]      36 [Inst] nop
+[info] [0.076] [PC_ID ]      32 [Inst] nop
+[info] [0.076] [PC_EXE]      28 [Inst] li t2,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.077]                                                   [ALU src1]       0 [ALU src2]       1 [ALU Out]       1
+[info] [0.077] [PC_MEM]      24 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.078] [PC_WB ]      20 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.078] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.079] ==============================================
+[info] [0.081] [PC_IF ]      40 [Inst] beq t2,t1,<test2>
+[info] [0.081] [PC_ID ]      36 [Inst] nop
+[info] [0.081] [PC_EXE]      32 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.082]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.082] [PC_MEM]      28 [Inst] li t2,1                   [DM Raddr]       1 [DM Rdata]fffffff0
+[info] [0.083] [PC_WB ]      24 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.083] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.084] ==============================================
+[info] [0.086] [PC_IF ]      44 [Inst] nop
+[info] [0.086] [PC_ID ]      40 [Inst] beq t2,t1,<test2>
+[info] [0.087] [PC_EXE]      36 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.087]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.088] [PC_MEM]      32 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.088] [PC_WB ]      28 [Inst] li t2,1                   [ WB reg ]       7 [WB  data]       1
+[info] [0.088] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.089] ==============================================
+[info] [0.095] [PC_IF ]      44 [Inst] nop
+[info] [0.095] [PC_ID ]      40 [Inst] beq t2,t1,<test2>
+[info] [0.096] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.096]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.097] [PC_MEM]      36 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.097] [PC_WB ]      32 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.098] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.098] ==============================================
+[info] [0.101] [PC_IF ]      48 [Inst] nop
+[info] [0.101] [PC_ID ]      44 [Inst] nop
+[info] [0.102] [PC_EXE]      40 [Inst] beq t2,t1,<test2>         [EXE src1]       1 [EXE src2]       1 [Br taken] 1
+[info] [0.102]                                                   [ALU src1]      28 [ALU src2]      1c [ALU Out]      44
+[info] [0.103] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.103] [PC_WB ]      36 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.104] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.105] ==============================================
+[info] [0.107] [PC_IF ]      68 [Inst] li gp,2
+[info] [0.107] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.107] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.108]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.109] [PC_MEM]      40 [Inst] beq t2,t1,<test2>         [DM Raddr]      44 [DM Rdata]       0
+[info] [0.109] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.110] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.110] ==============================================
+[info] [0.112] [PC_IF ]      72 [Inst] li t1,2
+[info] [0.112] [PC_ID ]      68 [Inst] li gp,2
+[info] [0.113] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.113]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.113] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.114] [PC_WB ]      40 [Inst] beq t2,t1,<test2>         [ WB reg ]      28 [WB  data]      44
+[info] [0.115] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.115] ==============================================
+[info] [0.117] [PC_IF ]      76 [Inst] nop
+[info] [0.118] [PC_ID ]      72 [Inst] li t1,2
+[info] [0.118] [PC_EXE]      68 [Inst] li gp,2                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.118]                                                   [ALU src1]       0 [ALU src2]       2 [ALU Out]       2
+[info] [0.119] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.119] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.120] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.120] ==============================================
+[info] [0.122] [PC_IF ]      80 [Inst] nop
+[info] [0.122] [PC_ID ]      76 [Inst] nop
+[info] [0.122] [PC_EXE]      72 [Inst] li t1,2                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.123]                                                   [ALU src1]       0 [ALU src2]       2 [ALU Out]       2
+[info] [0.123] [PC_MEM]      68 [Inst] li gp,2                   [DM Raddr]       2 [DM Rdata]       f
+[info] [0.123] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.124] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.124] ==============================================
+[info] [0.126] [PC_IF ]      84 [Inst] nop
+[info] [0.127] [PC_ID ]      80 [Inst] nop
+[info] [0.127] [PC_EXE]      76 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.128]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.128] [PC_MEM]      72 [Inst] li t1,2                   [DM Raddr]       2 [DM Rdata]       f
+[info] [0.129] [PC_WB ]      68 [Inst] li gp,2                   [ WB reg ]       3 [WB  data]       2
+[info] [0.130] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.130] ==============================================
+[info] [0.132] [PC_IF ]      88 [Inst] nop
+[info] [0.133] [PC_ID ]      84 [Inst] nop
+[info] [0.133] [PC_EXE]      80 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.134]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.134] [PC_MEM]      76 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.135] [PC_WB ]      72 [Inst] li t1,2                   [ WB reg ]       6 [WB  data]       2
+[info] [0.135] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.136] ==============================================
+[info] [0.138] [PC_IF ]      92 [Inst] nop
+[info] [0.138] [PC_ID ]      88 [Inst] nop
+[info] [0.138] [PC_EXE]      84 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.139]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.139] [PC_MEM]      80 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.140] [PC_WB ]      76 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.140] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.141] ==============================================
+[info] [0.142] [PC_IF ]      96 [Inst] li t2,2
+[info] [0.143] [PC_ID ]      92 [Inst] nop
+[info] [0.143] [PC_EXE]      88 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.144]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.144] [PC_MEM]      84 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.144] [PC_WB ]      80 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.145] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.145] ==============================================
+[info] [0.147] [PC_IF ]     100 [Inst] nop
+[info] [0.148] [PC_ID ]      96 [Inst] li t2,2
+[info] [0.148] [PC_EXE]      92 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.149]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.149] [PC_MEM]      88 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.150] [PC_WB ]      84 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.150] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.150] ==============================================
+[info] [0.152] [PC_IF ]     104 [Inst] nop
+[info] [0.152] [PC_ID ]     100 [Inst] nop
+[info] [0.152] [PC_EXE]      96 [Inst] li t2,2                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.153]                                                   [ALU src1]       0 [ALU src2]       2 [ALU Out]       2
+[info] [0.153] [PC_MEM]      92 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.154] [PC_WB ]      88 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.154] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.155] ==============================================
+[info] [0.157] [PC_IF ]     108 [Inst] beq t1,t2,<test3>
+[info] [0.157] [PC_ID ]     104 [Inst] nop
+[info] [0.158] [PC_EXE]     100 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.158]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.158] [PC_MEM]      96 [Inst] li t2,2                   [DM Raddr]       2 [DM Rdata]       f
+[info] [0.160] [PC_WB ]      92 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.160] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.161] ==============================================
+[info] [0.162] [PC_IF ]     112 [Inst] nop
+[info] [0.163] [PC_ID ]     108 [Inst] beq t1,t2,<test3>
+[info] [0.163] [PC_EXE]     104 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.164]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.164] [PC_MEM]     100 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.164] [PC_WB ]      96 [Inst] li t2,2                   [ WB reg ]       7 [WB  data]       2
+[info] [0.165] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.165] ==============================================
+[info] [0.167] [PC_IF ]     112 [Inst] nop
+[info] [0.167] [PC_ID ]     108 [Inst] beq t1,t2,<test3>
+[info] [0.168] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.168]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.168] [PC_MEM]     104 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.169] [PC_WB ]     100 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.169] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.169] ==============================================
+[info] [0.171] [PC_IF ]     116 [Inst] nop
+[info] [0.171] [PC_ID ]     112 [Inst] nop
+[info] [0.172] [PC_EXE]     108 [Inst] beq t1,t2,<test3>         [EXE src1]       2 [EXE src2]       2 [Br taken] 1
+[info] [0.172]                                                   [ALU src1]      6c [ALU src2]      1c [ALU Out]      88
+[info] [0.172] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.172] [PC_WB ]     104 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.173] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.173] ==============================================
+[info] [0.174] [PC_IF ]     136 [Inst] li gp,3
+[info] [0.175] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.175] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.175]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.176] [PC_MEM]     108 [Inst] beq t1,t2,<test3>         [DM Raddr]      88 [DM Rdata]       0
+[info] [0.176] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.176] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.177] ==============================================
+[info] [0.178] [PC_IF ]     140 [Inst] li t1,3
+[info] [0.179] [PC_ID ]     136 [Inst] li gp,3
+[info] [0.179] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.179]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.179] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.180] [PC_WB ]     108 [Inst] beq t1,t2,<test3>         [ WB reg ]      28 [WB  data]      88
+[info] [0.180] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.180] ==============================================
+[info] [0.182] [PC_IF ]     144 [Inst] nop
+[info] [0.182] [PC_ID ]     140 [Inst] li t1,3
+[info] [0.183] [PC_EXE]     136 [Inst] li gp,3                   [EXE src1]       0 [EXE src2]       2 [Br taken] 0
+[info] [0.183]                                                   [ALU src1]       0 [ALU src2]       3 [ALU Out]       3
+[info] [0.184] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.184] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.184] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.185] ==============================================
+[info] [0.186] [PC_IF ]     148 [Inst] nop
+[info] [0.186] [PC_ID ]     144 [Inst] nop
+[info] [0.187] [PC_EXE]     140 [Inst] li t1,3                   [EXE src1]       0 [EXE src2]       2 [Br taken] 0
+[info] [0.187]                                                   [ALU src1]       0 [ALU src2]       3 [ALU Out]       3
+[info] [0.188] [PC_MEM]     136 [Inst] li gp,3                   [DM Raddr]       3 [DM Rdata]       0
+[info] [0.188] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.188] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.189] ==============================================
+[info] [0.190] [PC_IF ]     152 [Inst] nop
+[info] [0.191] [PC_ID ]     148 [Inst] nop
+[info] [0.191] [PC_EXE]     144 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.191]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.191] [PC_MEM]     140 [Inst] li t1,3                   [DM Raddr]       3 [DM Rdata]       0
+[info] [0.192] [PC_WB ]     136 [Inst] li gp,3                   [ WB reg ]       3 [WB  data]       3
+[info] [0.192] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.192] ==============================================
+[info] [0.194] [PC_IF ]     156 [Inst] nop
+[info] [0.194] [PC_ID ]     152 [Inst] nop
+[info] [0.195] [PC_EXE]     148 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.195]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.195] [PC_MEM]     144 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.196] [PC_WB ]     140 [Inst] li t1,3                   [ WB reg ]       6 [WB  data]       3
+[info] [0.196] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.196] ==============================================
+[info] [0.197] [PC_IF ]     160 [Inst] nop
+[info] [0.198] [PC_ID ]     156 [Inst] nop
+[info] [0.198] [PC_EXE]     152 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.198]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.199] [PC_MEM]     148 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.199] [PC_WB ]     144 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.199] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.199] ==============================================
+[info] [0.201] [PC_IF ]     164 [Inst] li t2,3
+[info] [0.201] [PC_ID ]     160 [Inst] nop
+[info] [0.201] [PC_EXE]     156 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.202]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.202] [PC_MEM]     152 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.202] [PC_WB ]     148 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.203] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.203] ==============================================
+[info] [0.204] [PC_IF ]     168 [Inst] nop
+[info] [0.205] [PC_ID ]     164 [Inst] li t2,3
+[info] [0.205] [PC_EXE]     160 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.205]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.205] [PC_MEM]     156 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.206] [PC_WB ]     152 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.206] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.206] ==============================================
+[info] [0.208] [PC_IF ]     172 [Inst] beq t2,t1,<test4>
+[info] [0.208] [PC_ID ]     168 [Inst] nop
+[info] [0.208] [PC_EXE]     164 [Inst] li t2,3                   [EXE src1]       0 [EXE src2]       3 [Br taken] 0
+[info] [0.208]                                                   [ALU src1]       0 [ALU src2]       3 [ALU Out]       3
+[info] [0.208] [PC_MEM]     160 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.209] [PC_WB ]     156 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.209] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.209] ==============================================
+[info] [0.211] [PC_IF ]     176 [Inst] nop
+[info] [0.211] [PC_ID ]     172 [Inst] beq t2,t1,<test4>
+[info] [0.211] [PC_EXE]     168 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.211]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.212] [PC_MEM]     164 [Inst] li t2,3                   [DM Raddr]       3 [DM Rdata]       0
+[info] [0.212] [PC_WB ]     160 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.213] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.213] ==============================================
+[info] [0.214] [PC_IF ]     176 [Inst] nop
+[info] [0.214] [PC_ID ]     172 [Inst] beq t2,t1,<test4>
+[info] [0.215] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.215]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.215] [PC_MEM]     168 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.215] [PC_WB ]     164 [Inst] li t2,3                   [ WB reg ]       7 [WB  data]       3
+[info] [0.216] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.216] ==============================================
+[info] [0.217] [PC_IF ]     176 [Inst] nop
+[info] [0.218] [PC_ID ]     172 [Inst] beq t2,t1,<test4>
+[info] [0.218] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.218]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.218] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.219] [PC_WB ]     168 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.219] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.219] ==============================================
+[info] [0.221] [PC_IF ]     180 [Inst] nop
+[info] [0.221] [PC_ID ]     176 [Inst] nop
+[info] [0.221] [PC_EXE]     172 [Inst] beq t2,t1,<test4>         [EXE src1]       3 [EXE src2]       3 [Br taken] 1
+[info] [0.222]                                                   [ALU src1]      ac [ALU src2]      1c [ALU Out]      c8
+[info] [0.222] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.223] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.223] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.223] ==============================================
+[info] [0.225] [PC_IF ]     200 [Inst] li gp,4
+[info] [0.225] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.226] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.226]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.226] [PC_MEM]     172 [Inst] beq t2,t1,<test4>         [DM Raddr]      c8 [DM Rdata]       0
+[info] [0.227] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.227] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.227] ==============================================
+[info] [0.229] [PC_IF ]     204 [Inst] li t1,4
+[info] [0.229] [PC_ID ]     200 [Inst] li gp,4
+[info] [0.230] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.230]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.230] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.230] [PC_WB ]     172 [Inst] beq t2,t1,<test4>         [ WB reg ]      28 [WB  data]      c8
+[info] [0.231] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.231] ==============================================
+[info] [0.232] [PC_IF ]     208 [Inst] nop
+[info] [0.233] [PC_ID ]     204 [Inst] li t1,4
+[info] [0.233] [PC_EXE]     200 [Inst] li gp,4                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.233]                                                   [ALU src1]       0 [ALU src2]       4 [ALU Out]       4
+[info] [0.233] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.234] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.234] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.234] ==============================================
+[info] [0.236] [PC_IF ]     212 [Inst] nop
+[info] [0.236] [PC_ID ]     208 [Inst] nop
+[info] [0.236] [PC_EXE]     204 [Inst] li t1,4                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.236]                                                   [ALU src1]       0 [ALU src2]       4 [ALU Out]       4
+[info] [0.237] [PC_MEM]     200 [Inst] li gp,4                   [DM Raddr]       4 [DM Rdata]       0
+[info] [0.237] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.237] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.238] ==============================================
+[info] [0.239] [PC_IF ]     216 [Inst] nop
+[info] [0.239] [PC_ID ]     212 [Inst] nop
+[info] [0.239] [PC_EXE]     208 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.240]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.240] [PC_MEM]     204 [Inst] li t1,4                   [DM Raddr]       4 [DM Rdata]       0
+[info] [0.240] [PC_WB ]     200 [Inst] li gp,4                   [ WB reg ]       3 [WB  data]       4
+[info] [0.241] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.241] ==============================================
+[info] [0.242] [PC_IF ]     220 [Inst] nop
+[info] [0.243] [PC_ID ]     216 [Inst] nop
+[info] [0.243] [PC_EXE]     212 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.243]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.244] [PC_MEM]     208 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.244] [PC_WB ]     204 [Inst] li t1,4                   [ WB reg ]       6 [WB  data]       4
+[info] [0.244] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.245] ==============================================
+[info] [0.247] [PC_IF ]     224 [Inst] nop
+[info] [0.247] [PC_ID ]     220 [Inst] nop
+[info] [0.247] [PC_EXE]     216 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.248]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.248] [PC_MEM]     212 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.248] [PC_WB ]     208 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.249] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.249] ==============================================
+[info] [0.250] [PC_IF ]     228 [Inst] li t2,4
+[info] [0.251] [PC_ID ]     224 [Inst] nop
+[info] [0.251] [PC_EXE]     220 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.251]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.251] [PC_MEM]     216 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.251] [PC_WB ]     212 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.252] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.252] ==============================================
+[info] [0.253] [PC_IF ]     232 [Inst] nop
+[info] [0.254] [PC_ID ]     228 [Inst] li t2,4
+[info] [0.254] [PC_EXE]     224 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.254]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.255] [PC_MEM]     220 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.255] [PC_WB ]     216 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.255] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.255] ==============================================
+[info] [0.257] [PC_IF ]     236 [Inst] beq t1,t2,<test5>
+[info] [0.257] [PC_ID ]     232 [Inst] nop
+[info] [0.258] [PC_EXE]     228 [Inst] li t2,4                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.258]                                                   [ALU src1]       0 [ALU src2]       4 [ALU Out]       4
+[info] [0.258] [PC_MEM]     224 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.258] [PC_WB ]     220 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.259] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.259] ==============================================
+[info] [0.260] [PC_IF ]     240 [Inst] nop
+[info] [0.260] [PC_ID ]     236 [Inst] beq t1,t2,<test5>
+[info] [0.261] [PC_EXE]     232 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.261]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.261] [PC_MEM]     228 [Inst] li t2,4                   [DM Raddr]       4 [DM Rdata]       0
+[info] [0.262] [PC_WB ]     224 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.262] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.262] ==============================================
+[info] [0.264] [PC_IF ]     240 [Inst] nop
+[info] [0.264] [PC_ID ]     236 [Inst] beq t1,t2,<test5>
+[info] [0.265] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.265]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.265] [PC_MEM]     232 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.265] [PC_WB ]     228 [Inst] li t2,4                   [ WB reg ]       7 [WB  data]       4
+[info] [0.265] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.266] ==============================================
+[info] [0.267] [PC_IF ]     240 [Inst] nop
+[info] [0.267] [PC_ID ]     236 [Inst] beq t1,t2,<test5>
+[info] [0.268] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.268]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.268] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.268] [PC_WB ]     232 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.269] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.269] ==============================================
+[info] [0.270] [PC_IF ]     244 [Inst] nop
+[info] [0.270] [PC_ID ]     240 [Inst] nop
+[info] [0.271] [PC_EXE]     236 [Inst] beq t1,t2,<test5>         [EXE src1]       4 [EXE src2]       4 [Br taken] 1
+[info] [0.271]                                                   [ALU src1]      ec [ALU src2]      1c [ALU Out]     108
+[info] [0.271] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.271] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.272] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.272] ==============================================
+[info] [0.273] [PC_IF ]     264 [Inst] li gp,5
+[info] [0.273] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.274] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.274]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.274] [PC_MEM]     236 [Inst] beq t1,t2,<test5>         [DM Raddr]     108 [DM Rdata]       0
+[info] [0.274] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.275] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.275] ==============================================
+[info] [0.276] [PC_IF ]     268 [Inst] li t1,5
+[info] [0.276] [PC_ID ]     264 [Inst] li gp,5
+[info] [0.276] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.277]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.277] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.277] [PC_WB ]     236 [Inst] beq t1,t2,<test5>         [ WB reg ]      28 [WB  data]     108
+[info] [0.278] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.278] ==============================================
+[info] [0.279] [PC_IF ]     272 [Inst] nop
+[info] [0.279] [PC_ID ]     268 [Inst] li t1,5
+[info] [0.280] [PC_EXE]     264 [Inst] li gp,5                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.280]                                                   [ALU src1]       0 [ALU src2]       5 [ALU Out]       5
+[info] [0.280] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.281] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.281] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.281] ==============================================
+[info] [0.284] [PC_IF ]     276 [Inst] nop
+[info] [0.284] [PC_ID ]     272 [Inst] nop
+[info] [0.285] [PC_EXE]     268 [Inst] li t1,5                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.285]                                                   [ALU src1]       0 [ALU src2]       5 [ALU Out]       5
+[info] [0.285] [PC_MEM]     264 [Inst] li gp,5                   [DM Raddr]       5 [DM Rdata]       0
+[info] [0.285] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.286] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.286] ==============================================
+[info] [0.287] [PC_IF ]     280 [Inst] nop
+[info] [0.287] [PC_ID ]     276 [Inst] nop
+[info] [0.287] [PC_EXE]     272 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.288]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.288] [PC_MEM]     268 [Inst] li t1,5                   [DM Raddr]       5 [DM Rdata]       0
+[info] [0.288] [PC_WB ]     264 [Inst] li gp,5                   [ WB reg ]       3 [WB  data]       5
+[info] [0.289] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.289] ==============================================
+[info] [0.290] [PC_IF ]     284 [Inst] nop
+[info] [0.290] [PC_ID ]     280 [Inst] nop
+[info] [0.291] [PC_EXE]     276 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.291]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.291] [PC_MEM]     272 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.292] [PC_WB ]     268 [Inst] li t1,5                   [ WB reg ]       6 [WB  data]       5
+[info] [0.292] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.292] ==============================================
+[info] [0.294] [PC_IF ]     288 [Inst] nop
+[info] [0.294] [PC_ID ]     284 [Inst] nop
+[info] [0.294] [PC_EXE]     280 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.295]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.295] [PC_MEM]     276 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.295] [PC_WB ]     272 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.296] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.296] ==============================================
+[info] [0.298] [PC_IF ]     292 [Inst] li t2,5
+[info] [0.298] [PC_ID ]     288 [Inst] nop
+[info] [0.299] [PC_EXE]     284 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.299]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.299] [PC_MEM]     280 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.300] [PC_WB ]     276 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.300] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.301] ==============================================
+[info] [0.303] [PC_IF ]     296 [Inst] beq t2,t1,<test6>
+[info] [0.304] [PC_ID ]     292 [Inst] li t2,5
+[info] [0.304] [PC_EXE]     288 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.304]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.304] [PC_MEM]     284 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.305] [PC_WB ]     280 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.305] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.305] ==============================================
+[info] [0.307] [PC_IF ]     300 [Inst] nop
+[info] [0.307] [PC_ID ]     296 [Inst] beq t2,t1,<test6>
+[info] [0.308] [PC_EXE]     292 [Inst] li t2,5                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.308]                                                   [ALU src1]       0 [ALU src2]       5 [ALU Out]       5
+[info] [0.308] [PC_MEM]     288 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.309] [PC_WB ]     284 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.309] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.309] ==============================================
+[info] [0.311] [PC_IF ]     300 [Inst] nop
+[info] [0.311] [PC_ID ]     296 [Inst] beq t2,t1,<test6>
+[info] [0.312] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.312]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.313] [PC_MEM]     292 [Inst] li t2,5                   [DM Raddr]       5 [DM Rdata]       0
+[info] [0.313] [PC_WB ]     288 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.314] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.315] ==============================================
+[info] [0.317] [PC_IF ]     300 [Inst] nop
+[info] [0.318] [PC_ID ]     296 [Inst] beq t2,t1,<test6>
+[info] [0.318] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.318]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.319] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.319] [PC_WB ]     292 [Inst] li t2,5                   [ WB reg ]       7 [WB  data]       5
+[info] [0.319] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.319] ==============================================
+[info] [0.321] [PC_IF ]     300 [Inst] nop
+[info] [0.321] [PC_ID ]     296 [Inst] beq t2,t1,<test6>
+[info] [0.322] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.322]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.322] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.322] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.322] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.323] ==============================================
+[info] [0.324] [PC_IF ]     304 [Inst] nop
+[info] [0.324] [PC_ID ]     300 [Inst] nop
+[info] [0.325] [PC_EXE]     296 [Inst] beq t2,t1,<test6>         [EXE src1]       5 [EXE src2]       5 [Br taken] 1
+[info] [0.325]                                                   [ALU src1]     128 [ALU src2]      1c [ALU Out]     144
+[info] [0.325] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.325] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.326] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.326] ==============================================
+[info] [0.327] [PC_IF ]     324 [Inst] li gp,6
+[info] [0.327] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.327] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.328]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.328] [PC_MEM]     296 [Inst] beq t2,t1,<test6>         [DM Raddr]     144 [DM Rdata]       0
+[info] [0.328] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.328] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.328] ==============================================
+[info] [0.329] [PC_IF ]     328 [Inst] li t1,6
+[info] [0.329] [PC_ID ]     324 [Inst] li gp,6
+[info] [0.330] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.330]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.330] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.330] [PC_WB ]     296 [Inst] beq t2,t1,<test6>         [ WB reg ]      28 [WB  data]     144
+[info] [0.331] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.331] ==============================================
+[info] [0.332] [PC_IF ]     332 [Inst] nop
+[info] [0.332] [PC_ID ]     328 [Inst] li t1,6
+[info] [0.332] [PC_EXE]     324 [Inst] li gp,6                   [EXE src1]       0 [EXE src2]       5 [Br taken] 0
+[info] [0.332]                                                   [ALU src1]       0 [ALU src2]       6 [ALU Out]       6
+[info] [0.332] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.332] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.333] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.333] ==============================================
+[info] [0.334] [PC_IF ]     336 [Inst] nop
+[info] [0.334] [PC_ID ]     332 [Inst] nop
+[info] [0.334] [PC_EXE]     328 [Inst] li t1,6                   [EXE src1]       0 [EXE src2]       5 [Br taken] 0
+[info] [0.334]                                                   [ALU src1]       0 [ALU src2]       6 [ALU Out]       6
+[info] [0.335] [PC_MEM]     324 [Inst] li gp,6                   [DM Raddr]       6 [DM Rdata]       0
+[info] [0.335] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.335] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.335] ==============================================
+[info] [0.336] [PC_IF ]     340 [Inst] nop
+[info] [0.336] [PC_ID ]     336 [Inst] nop
+[info] [0.337] [PC_EXE]     332 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.337]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.337] [PC_MEM]     328 [Inst] li t1,6                   [DM Raddr]       6 [DM Rdata]       0
+[info] [0.337] [PC_WB ]     324 [Inst] li gp,6                   [ WB reg ]       3 [WB  data]       6
+[info] [0.337] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.337] ==============================================
+[info] [0.338] [PC_IF ]     344 [Inst] nop
+[info] [0.339] [PC_ID ]     340 [Inst] nop
+[info] [0.339] [PC_EXE]     336 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.339]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.339] [PC_MEM]     332 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.339] [PC_WB ]     328 [Inst] li t1,6                   [ WB reg ]       6 [WB  data]       6
+[info] [0.339] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.339] ==============================================
+[info] [0.340] [PC_IF ]     348 [Inst] nop
+[info] [0.341] [PC_ID ]     344 [Inst] nop
+[info] [0.341] [PC_EXE]     340 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.341]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.341] [PC_MEM]     336 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.341] [PC_WB ]     332 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.341] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.342] ==============================================
+[info] [0.342] [PC_IF ]     352 [Inst] li t2,6
+[info] [0.343] [PC_ID ]     348 [Inst] nop
+[info] [0.343] [PC_EXE]     344 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.343]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.343] [PC_MEM]     340 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.343] [PC_WB ]     336 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.344] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.344] ==============================================
+[info] [0.345] [PC_IF ]     356 [Inst] beq t1,t2,<test7>
+[info] [0.345] [PC_ID ]     352 [Inst] li t2,6
+[info] [0.345] [PC_EXE]     348 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.345]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.346] [PC_MEM]     344 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.346] [PC_WB ]     340 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.346] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.346] ==============================================
+[info] [0.348] [PC_IF ]     360 [Inst] nop
+[info] [0.348] [PC_ID ]     356 [Inst] beq t1,t2,<test7>
+[info] [0.348] [PC_EXE]     352 [Inst] li t2,6                   [EXE src1]       0 [EXE src2]       6 [Br taken] 0
+[info] [0.348]                                                   [ALU src1]       0 [ALU src2]       6 [ALU Out]       6
+[info] [0.348] [PC_MEM]     348 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.348] [PC_WB ]     344 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.349] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.349] ==============================================
+[info] [0.350] [PC_IF ]     360 [Inst] nop
+[info] [0.350] [PC_ID ]     356 [Inst] beq t1,t2,<test7>
+[info] [0.350] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.350]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.351] [PC_MEM]     352 [Inst] li t2,6                   [DM Raddr]       6 [DM Rdata]       0
+[info] [0.351] [PC_WB ]     348 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.351] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.351] ==============================================
+[info] [0.352] [PC_IF ]     360 [Inst] nop
+[info] [0.353] [PC_ID ]     356 [Inst] beq t1,t2,<test7>
+[info] [0.353] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.353]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.353] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.353] [PC_WB ]     352 [Inst] li t2,6                   [ WB reg ]       7 [WB  data]       6
+[info] [0.353] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.354] ==============================================
+[info] [0.355] [PC_IF ]     360 [Inst] nop
+[info] [0.356] [PC_ID ]     356 [Inst] beq t1,t2,<test7>
+[info] [0.356] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.356]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.357] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.357] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.357] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.357] ==============================================
+[info] [0.358] [PC_IF ]     364 [Inst] nop
+[info] [0.358] [PC_ID ]     360 [Inst] nop
+[info] [0.359] [PC_EXE]     356 [Inst] beq t1,t2,<test7>         [EXE src1]       6 [EXE src2]       6 [Br taken] 1
+[info] [0.359]                                                   [ALU src1]     164 [ALU src2]      1c [ALU Out]     180
+[info] [0.359] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.359] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.359] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.359] ==============================================
+[info] [0.360] [PC_IF ]     384 [Inst] li gp,7
+[info] [0.361] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.361] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.361]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.361] [PC_MEM]     356 [Inst] beq t1,t2,<test7>         [DM Raddr]     180 [DM Rdata]       0
+[info] [0.361] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.362] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.362] ==============================================
+[info] [0.363] [PC_IF ]     388 [Inst] auipc t1,0x8
+[info] [0.363] [PC_ID ]     384 [Inst] li gp,7
+[info] [0.363] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.363]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.364] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.364] [PC_WB ]     356 [Inst] beq t1,t2,<test7>         [ WB reg ]      28 [WB  data]     180
+[info] [0.364] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.364] ==============================================
+[info] [0.365] [PC_IF ]     392 [Inst] addi t1,t1,-388
+[info] [0.365] [PC_ID ]     388 [Inst] auipc t1,0x8
+[info] [0.365] [PC_EXE]     384 [Inst] li gp,7                   [EXE src1]       0 [EXE src2]       6 [Br taken] 0
+[info] [0.366]                                                   [ALU src1]       0 [ALU src2]       7 [ALU Out]       7
+[info] [0.366] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.366] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.366] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.366] ==============================================
+[info] [0.367] [PC_IF ]     396 [Inst] li t2,255
+[info] [0.367] [PC_ID ]     392 [Inst] addi t1,t1,-388
+[info] [0.368] [PC_EXE]     388 [Inst] auipc t1,0x8              [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.368]                                                   [ALU src1]     184 [ALU src2]    8000 [ALU Out]    8184
+[info] [0.368] [PC_MEM]     384 [Inst] li gp,7                   [DM Raddr]       7 [DM Rdata]       0
+[info] [0.368] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.369] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.369] ==============================================
+[info] [0.370] [PC_IF ]     396 [Inst] li t2,255
+[info] [0.370] [PC_ID ]     392 [Inst] addi t1,t1,-388
+[info] [0.370] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.370]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.371] [PC_MEM]     388 [Inst] auipc t1,0x8              [DM Raddr]     184 [DM Rdata]       0
+[info] [0.371] [PC_WB ]     384 [Inst] li gp,7                   [ WB reg ]       3 [WB  data]       7
+[info] [0.371] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.371] ==============================================
+[info] [0.372] [PC_IF ]     396 [Inst] li t2,255
+[info] [0.372] [PC_ID ]     392 [Inst] addi t1,t1,-388
+[info] [0.372] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.373]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.373] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.373] [PC_WB ]     388 [Inst] auipc t1,0x8              [ WB reg ]       6 [WB  data]    8184
+[info] [0.373] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.373] ==============================================
+[info] [0.374] [PC_IF ]     396 [Inst] li t2,255
+[info] [0.375] [PC_ID ]     392 [Inst] addi t1,t1,-388
+[info] [0.375] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.375]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.375] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.375] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.375] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.376] ==============================================
+[info] [0.377] [PC_IF ]     400 [Inst] nop
+[info] [0.377] [PC_ID ]     396 [Inst] li t2,255
+[info] [0.377] [PC_EXE]     392 [Inst] addi t1,t1,-388           [EXE src1]    8184 [EXE src2]       0 [Br taken] 0
+[info] [0.378]                                                   [ALU src1]    8184 [ALU src2]fffffe7c [ALU Out]    8000
+[info] [0.378] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.378] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.378] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.378] ==============================================
+[info] [0.379] [PC_IF ]     404 [Inst] nop
+[info] [0.379] [PC_ID ]     400 [Inst] nop
+[info] [0.380] [PC_EXE]     396 [Inst] li t2,255                 [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.380]                                                   [ALU src1]       0 [ALU src2]      ff [ALU Out]      ff
+[info] [0.380] [PC_MEM]     392 [Inst] addi t1,t1,-388           [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.380] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.380] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.380] ==============================================
+[info] [0.381] [PC_IF ]     408 [Inst] nop
+[info] [0.382] [PC_ID ]     404 [Inst] nop
+[info] [0.382] [PC_EXE]     400 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.382]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.382] [PC_MEM]     396 [Inst] li t2,255                 [DM Raddr]      ff [DM Rdata]       0
+[info] [0.382] [PC_WB ]     392 [Inst] addi t1,t1,-388           [ WB reg ]       6 [WB  data]    8000
+[info] [0.382] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.383] ==============================================
+[info] [0.383] [PC_IF ]     412 [Inst] nop
+[info] [0.384] [PC_ID ]     408 [Inst] nop
+[info] [0.384] [PC_EXE]     404 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.384]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.384] [PC_MEM]     400 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.384] [PC_WB ]     396 [Inst] li t2,255                 [ WB reg ]       7 [WB  data]      ff
+[info] [0.384] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.385] ==============================================
+[info] [0.385] [PC_IF ]     416 [Inst] nop
+[info] [0.386] [PC_ID ]     412 [Inst] nop
+[info] [0.386] [PC_EXE]     408 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.386]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.386] [PC_MEM]     404 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.386] [PC_WB ]     400 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.386] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.387] ==============================================
+[info] [0.387] [PC_IF ]     420 [Inst] lbu t3,0(t1)
+[info] [0.388] [PC_ID ]     416 [Inst] nop
+[info] [0.388] [PC_EXE]     412 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.388]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.388] [PC_MEM]     408 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.388] [PC_WB ]     404 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.388] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.389] ==============================================
+[info] [0.389] [PC_IF ]     424 [Inst] beq t3,t2,<test8>
+[info] [0.390] [PC_ID ]     420 [Inst] lbu t3,0(t1)
+[info] [0.390] [PC_EXE]     416 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.390]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.390] [PC_MEM]     412 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.390] [PC_WB ]     408 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.390] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.391] ==============================================
+[info] [0.392] [PC_IF ]     428 [Inst] nop
+[info] [0.392] [PC_ID ]     424 [Inst] beq t3,t2,<test8>
+[info] [0.392] [PC_EXE]     420 [Inst] lbu t3,0(t1)              [EXE src1]    8000 [EXE src2]       0 [Br taken] 0
+[info] [0.392]                                                   [ALU src1]    8000 [ALU src2]       0 [ALU Out]    8000
+[info] [0.392] [PC_MEM]     416 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.393] [PC_WB ]     412 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.393] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.393] ==============================================
+[info] [0.394] [PC_IF ]     428 [Inst] nop
+[info] [0.394] [PC_ID ]     424 [Inst] beq t3,t2,<test8>
+[info] [0.394] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.394]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.395] [PC_MEM]     420 [Inst] lbu t3,0(t1)              [DM Raddr]       0 [DM Rdata]      ff
+[info] [0.395] [PC_WB ]     416 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.395] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.395] ==============================================
+[info] [0.396] [PC_IF ]     428 [Inst] nop
+[info] [0.396] [PC_ID ]     424 [Inst] beq t3,t2,<test8>
+[info] [0.397] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.397]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.397] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.397] [PC_WB ]     420 [Inst] lbu t3,0(t1)              [ WB reg ]      28 [WB  data]      ff
+[info] [0.397] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.398] ==============================================
+[info] [0.399] [PC_IF ]     428 [Inst] nop
+[info] [0.399] [PC_ID ]     424 [Inst] beq t3,t2,<test8>
+[info] [0.399] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.399]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.400] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.400] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.400] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.400] ==============================================
+[info] [0.402] [PC_IF ]     432 [Inst] nop
+[info] [0.402] [PC_ID ]     428 [Inst] nop
+[info] [0.402] [PC_EXE]     424 [Inst] beq t3,t2,<test8>         [EXE src1]      ff [EXE src2]      ff [Br taken] 1
+[info] [0.402]                                                   [ALU src1]     1a8 [ALU src2]      1c [ALU Out]     1c4
+[info] [0.402] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.402] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.403] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.403] ==============================================
+[info] [0.404] [PC_IF ]     452 [Inst] li gp,8
+[info] [0.404] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.404] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.404]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.404] [PC_MEM]     424 [Inst] beq t3,t2,<test8>         [DM Raddr]     1c4 [DM Rdata]       0
+[info] [0.405] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.405] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.405] ==============================================
+[info] [0.406] [PC_IF ]     456 [Inst] auipc t1,0x8
+[info] [0.406] [PC_ID ]     452 [Inst] li gp,8
+[info] [0.406] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.407]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.407] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.407] [PC_WB ]     424 [Inst] beq t3,t2,<test8>         [ WB reg ]      28 [WB  data]     1c4
+[info] [0.407] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.407] ==============================================
+[info] [0.408] [PC_IF ]     460 [Inst] addi t1,t1,-454
+[info] [0.408] [PC_ID ]     456 [Inst] auipc t1,0x8
+[info] [0.408] [PC_EXE]     452 [Inst] li gp,8                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.408]                                                   [ALU src1]       0 [ALU src2]       8 [ALU Out]       8
+[info] [0.409] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.409] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.409] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.409] ==============================================
+[info] [0.410] [PC_IF ]     464 [Inst] li t2,15
+[info] [0.410] [PC_ID ]     460 [Inst] addi t1,t1,-454
+[info] [0.410] [PC_EXE]     456 [Inst] auipc t1,0x8              [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.411]                                                   [ALU src1]     1c8 [ALU src2]    8000 [ALU Out]    81c8
+[info] [0.411] [PC_MEM]     452 [Inst] li gp,8                   [DM Raddr]       8 [DM Rdata]       0
+[info] [0.411] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.411] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.411] ==============================================
+[info] [0.412] [PC_IF ]     464 [Inst] li t2,15
+[info] [0.412] [PC_ID ]     460 [Inst] addi t1,t1,-454
+[info] [0.413] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.413]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.413] [PC_MEM]     456 [Inst] auipc t1,0x8              [DM Raddr]     1c8 [DM Rdata]       0
+[info] [0.413] [PC_WB ]     452 [Inst] li gp,8                   [ WB reg ]       3 [WB  data]       8
+[info] [0.413] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.414] ==============================================
+[info] [0.414] [PC_IF ]     464 [Inst] li t2,15
+[info] [0.415] [PC_ID ]     460 [Inst] addi t1,t1,-454
+[info] [0.415] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.415]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.415] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.415] [PC_WB ]     456 [Inst] auipc t1,0x8              [ WB reg ]       6 [WB  data]    81c8
+[info] [0.415] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.416] ==============================================
+[info] [0.416] [PC_IF ]     464 [Inst] li t2,15
+[info] [0.417] [PC_ID ]     460 [Inst] addi t1,t1,-454
+[info] [0.417] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.417]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.417] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.417] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.417] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.417] ==============================================
+[info] [0.418] [PC_IF ]     468 [Inst] nop
+[info] [0.419] [PC_ID ]     464 [Inst] li t2,15
+[info] [0.419] [PC_EXE]     460 [Inst] addi t1,t1,-454           [EXE src1]    81c8 [EXE src2]       0 [Br taken] 0
+[info] [0.419]                                                   [ALU src1]    81c8 [ALU src2]fffffe3a [ALU Out]    8002
+[info] [0.419] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.419] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.419] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.419] ==============================================
+[info] [0.420] [PC_IF ]     472 [Inst] nop
+[info] [0.421] [PC_ID ]     468 [Inst] nop
+[info] [0.421] [PC_EXE]     464 [Inst] li t2,15                  [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.421]                                                   [ALU src1]       0 [ALU src2]       f [ALU Out]       f
+[info] [0.421] [PC_MEM]     460 [Inst] addi t1,t1,-454           [DM Raddr]       2 [DM Rdata]       f
+[info] [0.421] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.421] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.422] ==============================================
+[info] [0.423] [PC_IF ]     476 [Inst] nop
+[info] [0.423] [PC_ID ]     472 [Inst] nop
+[info] [0.423] [PC_EXE]     468 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.423]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.423] [PC_MEM]     464 [Inst] li t2,15                  [DM Raddr]       f [DM Rdata]       0
+[info] [0.423] [PC_WB ]     460 [Inst] addi t1,t1,-454           [ WB reg ]       6 [WB  data]    8002
+[info] [0.424] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.424] ==============================================
+[info] [0.425] [PC_IF ]     480 [Inst] nop
+[info] [0.425] [PC_ID ]     476 [Inst] nop
+[info] [0.425] [PC_EXE]     472 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.425]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.425] [PC_MEM]     468 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.425] [PC_WB ]     464 [Inst] li t2,15                  [ WB reg ]       7 [WB  data]       f
+[info] [0.426] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.426] ==============================================
+[info] [0.427] [PC_IF ]     484 [Inst] nop
+[info] [0.427] [PC_ID ]     480 [Inst] nop
+[info] [0.427] [PC_EXE]     476 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.427]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.427] [PC_MEM]     472 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.428] [PC_WB ]     468 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.428] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.428] ==============================================
+[info] [0.429] [PC_IF ]     488 [Inst] lbu t3,0(t1)
+[info] [0.429] [PC_ID ]     484 [Inst] nop
+[info] [0.429] [PC_EXE]     480 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.429]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.430] [PC_MEM]     476 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.430] [PC_WB ]     472 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.430] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.430] ==============================================
+[info] [0.431] [PC_IF ]     492 [Inst] beq t3,t2,<test9>
+[info] [0.431] [PC_ID ]     488 [Inst] lbu t3,0(t1)
+[info] [0.431] [PC_EXE]     484 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.431]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.432] [PC_MEM]     480 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.432] [PC_WB ]     476 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.432] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.432] ==============================================
+[info] [0.433] [PC_IF ]     496 [Inst] nop
+[info] [0.433] [PC_ID ]     492 [Inst] beq t3,t2,<test9>
+[info] [0.434] [PC_EXE]     488 [Inst] lbu t3,0(t1)              [EXE src1]    8002 [EXE src2]       0 [Br taken] 0
+[info] [0.434]                                                   [ALU src1]    8002 [ALU src2]       0 [ALU Out]    8002
+[info] [0.434] [PC_MEM]     484 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.434] [PC_WB ]     480 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.434] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.434] ==============================================
+[info] [0.435] [PC_IF ]     496 [Inst] nop
+[info] [0.435] [PC_ID ]     492 [Inst] beq t3,t2,<test9>
+[info] [0.436] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.436]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.436] [PC_MEM]     488 [Inst] lbu t3,0(t1)              [DM Raddr]       2 [DM Rdata]       f
+[info] [0.436] [PC_WB ]     484 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.436] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.436] ==============================================
+[info] [0.438] [PC_IF ]     496 [Inst] nop
+[info] [0.438] [PC_ID ]     492 [Inst] beq t3,t2,<test9>
+[info] [0.438] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.438]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.438] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.438] [PC_WB ]     488 [Inst] lbu t3,0(t1)              [ WB reg ]      28 [WB  data]       f
+[info] [0.438] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.438] ==============================================
+[info] [0.439] [PC_IF ]     496 [Inst] nop
+[info] [0.440] [PC_ID ]     492 [Inst] beq t3,t2,<test9>
+[info] [0.440] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.440]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.440] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.440] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.440] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.441] ==============================================
+[info] [0.442] [PC_IF ]     500 [Inst] nop
+[info] [0.442] [PC_ID ]     496 [Inst] nop
+[info] [0.442] [PC_EXE]     492 [Inst] beq t3,t2,<test9>         [EXE src1]       f [EXE src2]       f [Br taken] 1
+[info] [0.442]                                                   [ALU src1]     1ec [ALU src2]      1c [ALU Out]     208
+[info] [0.442] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.442] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.442] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.443] ==============================================
+[info] [0.444] [PC_IF ]     520 [Inst] li gp,9
+[info] [0.444] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.444] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.444]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.444] [PC_MEM]     492 [Inst] beq t3,t2,<test9>         [DM Raddr]     208 [DM Rdata]       0
+[info] [0.445] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.445] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.445] ==============================================
+[info] [0.447] [PC_IF ]     524 [Inst] li t3,1
+[info] [0.447] [PC_ID ]     520 [Inst] li gp,9
+[info] [0.447] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.447]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.448] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.448] [PC_WB ]     492 [Inst] beq t3,t2,<test9>         [ WB reg ]      28 [WB  data]     208
+[info] [0.448] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.448] ==============================================
+[info] [0.450] [PC_IF ]     528 [Inst] auipc t1,0x8
+[info] [0.450] [PC_ID ]     524 [Inst] li t3,1
+[info] [0.451] [PC_EXE]     520 [Inst] li gp,9                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.451]                                                   [ALU src1]       0 [ALU src2]       9 [ALU Out]       9
+[info] [0.451] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.452] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.452] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.452] ==============================================
+[info] [0.453] [PC_IF ]     532 [Inst] addi t1,t1,-528
+[info] [0.454] [PC_ID ]     528 [Inst] auipc t1,0x8
+[info] [0.454] [PC_EXE]     524 [Inst] li t3,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.454]                                                   [ALU src1]       0 [ALU src2]       1 [ALU Out]       1
+[info] [0.454] [PC_MEM]     520 [Inst] li gp,9                   [DM Raddr]       9 [DM Rdata]       0
+[info] [0.454] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.454] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.454] ==============================================
+[info] [0.456] [PC_IF ]     536 [Inst] lb t2,0(t1)
+[info] [0.456] [PC_ID ]     532 [Inst] addi t1,t1,-528
+[info] [0.456] [PC_EXE]     528 [Inst] auipc t1,0x8              [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.456]                                                   [ALU src1]     210 [ALU src2]    8000 [ALU Out]    8210
+[info] [0.456] [PC_MEM]     524 [Inst] li t3,1                   [DM Raddr]       1 [DM Rdata]fffffff0
+[info] [0.456] [PC_WB ]     520 [Inst] li gp,9                   [ WB reg ]       3 [WB  data]       9
+[info] [0.457] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.457] ==============================================
+[info] [0.459] [PC_IF ]     536 [Inst] lb t2,0(t1)
+[info] [0.459] [PC_ID ]     532 [Inst] addi t1,t1,-528
+[info] [0.459] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.459]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.459] [PC_MEM]     528 [Inst] auipc t1,0x8              [DM Raddr]     210 [DM Rdata]       0
+[info] [0.460] [PC_WB ]     524 [Inst] li t3,1                   [ WB reg ]      28 [WB  data]       1
+[info] [0.460] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.460] ==============================================
+[info] [0.462] [PC_IF ]     536 [Inst] lb t2,0(t1)
+[info] [0.462] [PC_ID ]     532 [Inst] addi t1,t1,-528
+[info] [0.462] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.462]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.462] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.463] [PC_WB ]     528 [Inst] auipc t1,0x8              [ WB reg ]       6 [WB  data]    8210
+[info] [0.463] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.463] ==============================================
+[info] [0.464] [PC_IF ]     536 [Inst] lb t2,0(t1)
+[info] [0.464] [PC_ID ]     532 [Inst] addi t1,t1,-528
+[info] [0.464] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.465]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.465] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.465] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.465] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.465] ==============================================
+[info] [0.467] [PC_IF ]     540 [Inst] add t3,t2,t3
+[info] [0.467] [PC_ID ]     536 [Inst] lb t2,0(t1)
+[info] [0.467] [PC_EXE]     532 [Inst] addi t1,t1,-528           [EXE src1]    8210 [EXE src2]       0 [Br taken] 0
+[info] [0.467]                                                   [ALU src1]    8210 [ALU src2]fffffdf0 [ALU Out]    8000
+[info] [0.467] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.468] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.468] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.468] ==============================================
+[info] [0.469] [PC_IF ]     540 [Inst] add t3,t2,t3
+[info] [0.469] [PC_ID ]     536 [Inst] lb t2,0(t1)
+[info] [0.470] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.470]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.470] [PC_MEM]     532 [Inst] addi t1,t1,-528           [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.470] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.471] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.471] ==============================================
+[info] [0.472] [PC_IF ]     540 [Inst] add t3,t2,t3
+[info] [0.472] [PC_ID ]     536 [Inst] lb t2,0(t1)
+[info] [0.473] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.473]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.473] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.473] [PC_WB ]     532 [Inst] addi t1,t1,-528           [ WB reg ]       6 [WB  data]    8000
+[info] [0.474] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.474] ==============================================
+[info] [0.475] [PC_IF ]     540 [Inst] add t3,t2,t3
+[info] [0.475] [PC_ID ]     536 [Inst] lb t2,0(t1)
+[info] [0.475] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.476]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.476] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.476] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.477] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.477] ==============================================
+[info] [0.478] [PC_IF ]     544 [Inst] add t3,t3,t2
+[info] [0.479] [PC_ID ]     540 [Inst] add t3,t2,t3
+[info] [0.479] [PC_EXE]     536 [Inst] lb t2,0(t1)               [EXE src1]    8000 [EXE src2]       0 [Br taken] 0
+[info] [0.479]                                                   [ALU src1]    8000 [ALU src2]       0 [ALU Out]    8000
+[info] [0.479] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.479] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.480] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.480] ==============================================
+[info] [0.481] [PC_IF ]     544 [Inst] add t3,t3,t2
+[info] [0.481] [PC_ID ]     540 [Inst] add t3,t2,t3
+[info] [0.482] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.482]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.482] [PC_MEM]     536 [Inst] lb t2,0(t1)               [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.483] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.483] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.483] ==============================================
+[info] [0.484] [PC_IF ]     544 [Inst] add t3,t3,t2
+[info] [0.485] [PC_ID ]     540 [Inst] add t3,t2,t3
+[info] [0.485] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.485]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.485] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.485] [PC_WB ]     536 [Inst] lb t2,0(t1)               [ WB reg ]       7 [WB  data]ffffffff
+[info] [0.485] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.485] ==============================================
+[info] [0.487] [PC_IF ]     544 [Inst] add t3,t3,t2
+[info] [0.487] [PC_ID ]     540 [Inst] add t3,t2,t3
+[info] [0.487] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.487]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.487] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.488] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.488] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.488] ==============================================
+[info] [0.489] [PC_IF ]     548 [Inst] sub t3,t2,t3
+[info] [0.489] [PC_ID ]     544 [Inst] add t3,t3,t2
+[info] [0.489] [PC_EXE]     540 [Inst] add t3,t2,t3              [EXE src1]ffffffff [EXE src2]       1 [Br taken] 0
+[info] [0.489]                                                   [ALU src1]ffffffff [ALU src2]       1 [ALU Out]       0
+[info] [0.489] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.490] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.490] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.490] ==============================================
+[info] [0.491] [PC_IF ]     548 [Inst] sub t3,t2,t3
+[info] [0.491] [PC_ID ]     544 [Inst] add t3,t3,t2
+[info] [0.492] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.492]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.492] [PC_MEM]     540 [Inst] add t3,t2,t3              [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.492] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.492] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.492] ==============================================
+[info] [0.493] [PC_IF ]     548 [Inst] sub t3,t2,t3
+[info] [0.494] [PC_ID ]     544 [Inst] add t3,t3,t2
+[info] [0.494] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.494]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.494] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.494] [PC_WB ]     540 [Inst] add t3,t2,t3              [ WB reg ]      28 [WB  data]       0
+[info] [0.494] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.495] ==============================================
+[info] [0.496] [PC_IF ]     548 [Inst] sub t3,t2,t3
+[info] [0.496] [PC_ID ]     544 [Inst] add t3,t3,t2
+[info] [0.496] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.496]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.496] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.496] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.497] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.497] ==============================================
+[info] [0.498] [PC_IF ]     552 [Inst] beqz t3,<test10>
+[info] [0.498] [PC_ID ]     548 [Inst] sub t3,t2,t3
+[info] [0.498] [PC_EXE]     544 [Inst] add t3,t3,t2              [EXE src1]       0 [EXE src2]ffffffff [Br taken] 0
+[info] [0.499]                                                   [ALU src1]       0 [ALU src2]ffffffff [ALU Out]ffffffff
+[info] [0.499] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.499] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.499] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.499] ==============================================
+[info] [0.500] [PC_IF ]     552 [Inst] beqz t3,<test10>
+[info] [0.500] [PC_ID ]     548 [Inst] sub t3,t2,t3
+[info] [0.501] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.501]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.501] [PC_MEM]     544 [Inst] add t3,t3,t2              [DM Raddr]    7fff [DM Rdata]       0
+[info] [0.501] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.501] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.501] ==============================================
+[info] [0.502] [PC_IF ]     552 [Inst] beqz t3,<test10>
+[info] [0.502] [PC_ID ]     548 [Inst] sub t3,t2,t3
+[info] [0.503] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.503]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.503] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.503] [PC_WB ]     544 [Inst] add t3,t3,t2              [ WB reg ]      28 [WB  data]ffffffff
+[info] [0.503] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.503] ==============================================
+[info] [0.504] [PC_IF ]     552 [Inst] beqz t3,<test10>
+[info] [0.504] [PC_ID ]     548 [Inst] sub t3,t2,t3
+[info] [0.504] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.504]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.505] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.505] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.505] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.505] ==============================================
+[info] [0.506] [PC_IF ]     556 [Inst] beqz zero,<fail>
+[info] [0.506] [PC_ID ]     552 [Inst] beqz t3,<test10>
+[info] [0.506] [PC_EXE]     548 [Inst] sub t3,t2,t3              [EXE src1]ffffffff [EXE src2]ffffffff [Br taken] 0
+[info] [0.506]                                                   [ALU src1]ffffffff [ALU src2]ffffffff [ALU Out]       0
+[info] [0.506] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.507] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.507] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.507] ==============================================
+[info] [0.508] [PC_IF ]     556 [Inst] beqz zero,<fail>
+[info] [0.508] [PC_ID ]     552 [Inst] beqz t3,<test10>
+[info] [0.508] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.508]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.509] [PC_MEM]     548 [Inst] sub t3,t2,t3              [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.509] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.509] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.509] ==============================================
+[info] [0.510] [PC_IF ]     556 [Inst] beqz zero,<fail>
+[info] [0.510] [PC_ID ]     552 [Inst] beqz t3,<test10>
+[info] [0.510] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.510]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.510] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.511] [PC_WB ]     548 [Inst] sub t3,t2,t3              [ WB reg ]      28 [WB  data]       0
+[info] [0.511] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.511] ==============================================
+[info] [0.512] [PC_IF ]     556 [Inst] beqz zero,<fail>
+[info] [0.512] [PC_ID ]     552 [Inst] beqz t3,<test10>
+[info] [0.512] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.513]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.513] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.513] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.513] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.513] ==============================================
+[info] [0.514] [PC_IF ]     560 [Inst] li gp,10
+[info] [0.514] [PC_ID ]     556 [Inst] beqz zero,<fail>
+[info] [0.515] [PC_EXE]     552 [Inst] beqz t3,<test10>          [EXE src1]       0 [EXE src2]       0 [Br taken] 1
+[info] [0.515]                                                   [ALU src1]     228 [ALU src2]       8 [ALU Out]     230
+[info] [0.515] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.515] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.515] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.515] ==============================================
+[info] [0.516] [PC_IF ]     560 [Inst] li gp,10
+[info] [0.516] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.517] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.517]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.517] [PC_MEM]     552 [Inst] beqz t3,<test10>          [DM Raddr]     230 [DM Rdata]       0
+[info] [0.517] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.517] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.517] ==============================================
+[info] [0.518] [PC_IF ]     564 [Inst] auipc t3,0x8
+[info] [0.518] [PC_ID ]     560 [Inst] li gp,10
+[info] [0.519] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.519]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.519] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.519] [PC_WB ]     552 [Inst] beqz t3,<test10>          [ WB reg ]       8 [WB  data]     230
+[info] [0.519] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.519] ==============================================
+[info] [0.521] [PC_IF ]     568 [Inst] addi t3,t3,-560
+[info] [0.521] [PC_ID ]     564 [Inst] auipc t3,0x8
+[info] [0.521] [PC_EXE]     560 [Inst] li gp,10                  [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.521]                                                   [ALU src1]       0 [ALU src2]       a [ALU Out]       a
+[info] [0.521] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.522] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.522] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.522] ==============================================
+[info] [0.523] [PC_IF ]     572 [Inst] auipc t1,0x8
+[info] [0.524] [PC_ID ]     568 [Inst] addi t3,t3,-560
+[info] [0.524] [PC_EXE]     564 [Inst] auipc t3,0x8              [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.524]                                                   [ALU src1]     234 [ALU src2]    8000 [ALU Out]    8234
+[info] [0.524] [PC_MEM]     560 [Inst] li gp,10                  [DM Raddr]       a [DM Rdata]       0
+[info] [0.524] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.524] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.524] ==============================================
+[info] [0.525] [PC_IF ]     572 [Inst] auipc t1,0x8
+[info] [0.526] [PC_ID ]     568 [Inst] addi t3,t3,-560
+[info] [0.526] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.526]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.526] [PC_MEM]     564 [Inst] auipc t3,0x8              [DM Raddr]     234 [DM Rdata]       0
+[info] [0.526] [PC_WB ]     560 [Inst] li gp,10                  [ WB reg ]       3 [WB  data]       a
+[info] [0.526] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.526] ==============================================
+[info] [0.528] [PC_IF ]     572 [Inst] auipc t1,0x8
+[info] [0.528] [PC_ID ]     568 [Inst] addi t3,t3,-560
+[info] [0.528] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.528]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.529] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.529] [PC_WB ]     564 [Inst] auipc t3,0x8              [ WB reg ]      28 [WB  data]    8234
+[info] [0.529] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.529] ==============================================
+[info] [0.530] [PC_IF ]     572 [Inst] auipc t1,0x8
+[info] [0.531] [PC_ID ]     568 [Inst] addi t3,t3,-560
+[info] [0.531] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.531]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.531] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.531] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.531] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.532] ==============================================
+[info] [0.532] [PC_IF ]     576 [Inst] addi t1,t1,-572
+[info] [0.533] [PC_ID ]     572 [Inst] auipc t1,0x8
+[info] [0.533] [PC_EXE]     568 [Inst] addi t3,t3,-560           [EXE src1]    8234 [EXE src2]       0 [Br taken] 0
+[info] [0.533]                                                   [ALU src1]    8234 [ALU src2]fffffdd0 [ALU Out]    8004
+[info] [0.533] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.533] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.533] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.533] ==============================================
+[info] [0.535] [PC_IF ]     580 [Inst] sw t1,0(t3)
+[info] [0.535] [PC_ID ]     576 [Inst] addi t1,t1,-572
+[info] [0.535] [PC_EXE]     572 [Inst] auipc t1,0x8              [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.535]                                                   [ALU src1]     23c [ALU src2]    8000 [ALU Out]    823c
+[info] [0.535] [PC_MEM]     568 [Inst] addi t3,t3,-560           [DM Raddr]       4 [DM Rdata]       0
+[info] [0.535] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.536] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.536] ==============================================
+[info] [0.537] [PC_IF ]     580 [Inst] sw t1,0(t3)
+[info] [0.537] [PC_ID ]     576 [Inst] addi t1,t1,-572
+[info] [0.537] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.537]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.537] [PC_MEM]     572 [Inst] auipc t1,0x8              [DM Raddr]     23c [DM Rdata]       0
+[info] [0.537] [PC_WB ]     568 [Inst] addi t3,t3,-560           [ WB reg ]      28 [WB  data]    8004
+[info] [0.538] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.538] ==============================================
+[info] [0.539] [PC_IF ]     580 [Inst] sw t1,0(t3)
+[info] [0.539] [PC_ID ]     576 [Inst] addi t1,t1,-572
+[info] [0.539] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.539]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.539] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.539] [PC_WB ]     572 [Inst] auipc t1,0x8              [ WB reg ]       6 [WB  data]    823c
+[info] [0.540] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.540] ==============================================
+[info] [0.541] [PC_IF ]     580 [Inst] sw t1,0(t3)
+[info] [0.541] [PC_ID ]     576 [Inst] addi t1,t1,-572
+[info] [0.542] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.542]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.542] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.542] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.542] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.543] ==============================================
+[info] [0.544] [PC_IF ]     584 [Inst] add t2,zero,t3
+[info] [0.544] [PC_ID ]     580 [Inst] sw t1,0(t3)
+[info] [0.544] [PC_EXE]     576 [Inst] addi t1,t1,-572           [EXE src1]    823c [EXE src2]       0 [Br taken] 0
+[info] [0.544]                                                   [ALU src1]    823c [ALU src2]fffffdc4 [ALU Out]    8000
+[info] [0.544] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.544] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.544] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.544] ==============================================
+[info] [0.545] [PC_IF ]     584 [Inst] add t2,zero,t3
+[info] [0.546] [PC_ID ]     580 [Inst] sw t1,0(t3)
+[info] [0.546] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.546]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.546] [PC_MEM]     576 [Inst] addi t1,t1,-572           [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.546] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.546] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.546] ==============================================
+[info] [0.547] [PC_IF ]     584 [Inst] add t2,zero,t3
+[info] [0.548] [PC_ID ]     580 [Inst] sw t1,0(t3)
+[info] [0.548] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.548]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.548] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.548] [PC_WB ]     576 [Inst] addi t1,t1,-572           [ WB reg ]       6 [WB  data]    8000
+[info] [0.548] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.549] ==============================================
+[info] [0.550] [PC_IF ]     584 [Inst] add t2,zero,t3
+[info] [0.550] [PC_ID ]     580 [Inst] sw t1,0(t3)
+[info] [0.550] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.550]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.550] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.550] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.551] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.551] ==============================================
+[info] [0.552] [PC_IF ]     588 [Inst] lw t2,0(t2)
+[info] [0.552] [PC_ID ]     584 [Inst] add t2,zero,t3
+[info] [0.552] [PC_EXE]     580 [Inst] sw t1,0(t3)               [EXE src1]    8004 [EXE src2]    8000 [Br taken] 0
+[info] [0.552]                                                   [ALU src1]    8004 [ALU src2]       0 [ALU Out]    8004
+[info] [0.553] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.553] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.553] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.554] ==============================================
+[info] [0.555] [PC_IF ]     592 [Inst] lb t2,0(t2)
+[info] [0.555] [PC_ID ]     588 [Inst] lw t2,0(t2)
+[info] [0.555] [PC_EXE]     584 [Inst] add t2,zero,t3            [EXE src1]       0 [EXE src2]    8004 [Br taken] 0
+[info] [0.556]                                                   [ALU src1]       0 [ALU src2]    8004 [ALU Out]    8004
+[info] [0.556] [PC_MEM]     580 [Inst] sw t1,0(t3)               [DM Raddr]       4 [DM Rdata]       0
+[info] [0.557] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.557] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.557] ==============================================
+[info] [0.558] [PC_IF ]     592 [Inst] lb t2,0(t2)
+[info] [0.558] [PC_ID ]     588 [Inst] lw t2,0(t2)
+[info] [0.559] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.559]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.559] [PC_MEM]     584 [Inst] add t2,zero,t3            [DM Raddr]       4 [DM Rdata]       0
+[info] [0.559] [PC_WB ]     580 [Inst] sw t1,0(t3)               [ WB reg ]       0 [WB  data]    8004
+[info] [0.559] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.559] ==============================================
+[info] [0.560] [PC_IF ]     592 [Inst] lb t2,0(t2)
+[info] [0.561] [PC_ID ]     588 [Inst] lw t2,0(t2)
+[info] [0.561] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.561]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.561] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.561] [PC_WB ]     584 [Inst] add t2,zero,t3            [ WB reg ]       7 [WB  data]    8004
+[info] [0.561] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.561] ==============================================
+[info] [0.563] [PC_IF ]     592 [Inst] lb t2,0(t2)
+[info] [0.563] [PC_ID ]     588 [Inst] lw t2,0(t2)
+[info] [0.563] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.563]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.563] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.563] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.563] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.563] ==============================================
+[info] [0.565] [PC_IF ]     596 [Inst] lb t1,0(t1)
+[info] [0.565] [PC_ID ]     592 [Inst] lb t2,0(t2)
+[info] [0.565] [PC_EXE]     588 [Inst] lw t2,0(t2)               [EXE src1]    8004 [EXE src2]       0 [Br taken] 0
+[info] [0.565]                                                   [ALU src1]    8004 [ALU src2]       0 [ALU Out]    8004
+[info] [0.565] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.566] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.566] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.566] ==============================================
+[info] [0.567] [PC_IF ]     596 [Inst] lb t1,0(t1)
+[info] [0.567] [PC_ID ]     592 [Inst] lb t2,0(t2)
+[info] [0.567] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.567]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.568] [PC_MEM]     588 [Inst] lw t2,0(t2)               [DM Raddr]       4 [DM Rdata]    8000
+[info] [0.568] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.568] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.568] ==============================================
+[info] [0.569] [PC_IF ]     596 [Inst] lb t1,0(t1)
+[info] [0.570] [PC_ID ]     592 [Inst] lb t2,0(t2)
+[info] [0.570] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.570]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.570] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.570] [PC_WB ]     588 [Inst] lw t2,0(t2)               [ WB reg ]       7 [WB  data]    8000
+[info] [0.571] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.571] ==============================================
+[info] [0.572] [PC_IF ]     596 [Inst] lb t1,0(t1)
+[info] [0.572] [PC_ID ]     592 [Inst] lb t2,0(t2)
+[info] [0.572] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.572]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.572] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.572] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.573] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.573] ==============================================
+[info] [0.574] [PC_IF ]     600 [Inst] beq t1,t2,<pass>
+[info] [0.574] [PC_ID ]     596 [Inst] lb t1,0(t1)
+[info] [0.574] [PC_EXE]     592 [Inst] lb t2,0(t2)               [EXE src1]    8000 [EXE src2]       0 [Br taken] 0
+[info] [0.574]                                                   [ALU src1]    8000 [ALU src2]       0 [ALU Out]    8000
+[info] [0.574] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.574] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.575] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.575] ==============================================
+[info] [0.576] [PC_IF ]     604 [Inst] beqz zero,<fail>
+[info] [0.576] [PC_ID ]     600 [Inst] beq t1,t2,<pass>
+[info] [0.576] [PC_EXE]     596 [Inst] lb t1,0(t1)               [EXE src1]    8000 [EXE src2]       0 [Br taken] 0
+[info] [0.577]                                                   [ALU src1]    8000 [ALU src2]       0 [ALU Out]    8000
+[info] [0.577] [PC_MEM]     592 [Inst] lb t2,0(t2)               [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.577] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.577] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.577] ==============================================
+[info] [0.578] [PC_IF ]     604 [Inst] beqz zero,<fail>
+[info] [0.579] [PC_ID ]     600 [Inst] beq t1,t2,<pass>
+[info] [0.579] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.579]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.579] [PC_MEM]     596 [Inst] lb t1,0(t1)               [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.579] [PC_WB ]     592 [Inst] lb t2,0(t2)               [ WB reg ]       7 [WB  data]ffffffff
+[info] [0.579] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.579] ==============================================
+[info] [0.580] [PC_IF ]     604 [Inst] beqz zero,<fail>
+[info] [0.581] [PC_ID ]     600 [Inst] beq t1,t2,<pass>
+[info] [0.581] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.581]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.581] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.581] [PC_WB ]     596 [Inst] lb t1,0(t1)               [ WB reg ]       6 [WB  data]ffffffff
+[info] [0.582] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 1
+[info] [0.582] ==============================================
+[info] [0.583] [PC_IF ]     604 [Inst] beqz zero,<fail>
+[info] [0.583] [PC_ID ]     600 [Inst] beq t1,t2,<pass>
+[info] [0.583] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.583]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.583] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.583] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.584] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.584] ==============================================
+[info] [0.585] [PC_IF ]     608 [Inst] li sp,0
+[info] [0.585] [PC_ID ]     604 [Inst] beqz zero,<fail>
+[info] [0.585] [PC_EXE]     600 [Inst] beq t1,t2,<pass>          [EXE src1]ffffffff [EXE src2]ffffffff [Br taken] 1
+[info] [0.586]                                                   [ALU src1]     258 [ALU src2]       8 [ALU Out]     260
+[info] [0.586] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.586] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.586] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.586] ==============================================
+[info] [0.587] [PC_IF ]     608 [Inst] li sp,0
+[info] [0.588] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.588] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.588]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.588] [PC_MEM]     600 [Inst] beq t1,t2,<pass>          [DM Raddr]     260 [DM Rdata]       0
+[info] [0.588] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.588] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.588] ==============================================
+[info] [0.589] [PC_IF ]     612 [Inst] beqz zero,<exit>
+[info] [0.589] [PC_ID ]     608 [Inst] li sp,0
+[info] [0.590] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.590]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.590] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.590] [PC_WB ]     600 [Inst] beq t1,t2,<pass>          [ WB reg ]       8 [WB  data]     260
+[info] [0.590] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.590] ==============================================
+[info] [0.591] [PC_IF ]     616 [Inst] nop
+[info] [0.592] [PC_ID ]     612 [Inst] beqz zero,<exit>
+[info] [0.592] [PC_EXE]     608 [Inst] li sp,0                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.592]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.592] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.592] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.592] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.592] ==============================================
+[info] [0.594] [PC_IF ]     620 [Inst] nop
+[info] [0.594] [PC_ID ]     616 [Inst] nop
+[info] [0.594] [PC_EXE]     612 [Inst] beqz zero,<exit>          [EXE src1]       0 [EXE src2]       0 [Br taken] 1
+[info] [0.594]                                                   [ALU src1]     264 [ALU src2]      1c [ALU Out]     280
+[info] [0.594] [PC_MEM]     608 [Inst] li sp,0                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.594] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.594] [Flush ] 1 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.594] ==============================================
+[info] [0.596] [PC_IF ]     640 [Inst] nop
+[info] [0.596] [PC_ID ]       0 [Inst] li gp,1
+[info] [0.597] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.597]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.597] [PC_MEM]     612 [Inst] beqz zero,<exit>          [DM Raddr]     280 [DM Rdata]       0
+[info] [0.597] [PC_WB ]     608 [Inst] li sp,0                   [ WB reg ]       2 [WB  data]       0
+[info] [0.597] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.597] ==============================================
+[info] [0.600] [PC_IF ]     644 [Inst] nop
+[info] [0.600] [PC_ID ]     640 [Inst] nop
+[info] [0.600] [PC_EXE]       0 [Inst] li gp,1                   [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.600]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.601] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.601] [PC_WB ]     612 [Inst] beqz zero,<exit>          [ WB reg ]      28 [WB  data]     280
+[info] [0.601] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.601] ==============================================
+[info] [0.602] [PC_IF ]     648 [Inst] nop
+[info] [0.603] [PC_ID ]     644 [Inst] nop
+[info] [0.603] [PC_EXE]     640 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.603]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.603] [PC_MEM]       0 [Inst] li gp,1                   [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.603] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.603] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.603] ==============================================
+[info] [0.605] [PC_IF ]     652 [Inst] nop
+[info] [0.605] [PC_ID ]     648 [Inst] nop
+[info] [0.605] [PC_EXE]     644 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.605]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.605] [PC_MEM]     640 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.605] [PC_WB ]       0 [Inst] li gp,1                   [ WB reg ]       0 [WB  data]       0
+[info] [0.606] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.606] ==============================================
+[info] [0.607] [PC_IF ]     656 [Inst] nop
+[info] [0.607] [PC_ID ]     652 [Inst] nop
+[info] [0.607] [PC_EXE]     648 [Inst] nop                       [EXE src1]       0 [EXE src2]       0 [Br taken] 0
+[info] [0.608]                                                   [ALU src1]       0 [ALU src2]       0 [ALU Out]       0
+[info] [0.608] [PC_MEM]     644 [Inst] nop                       [DM Raddr]       0 [DM Rdata]ffffffff
+[info] [0.608] [PC_WB ]     640 [Inst] nop                       [ WB reg ]       0 [WB  data]       0
+[info] [0.608] [Flush ] 0 [Stall_MA ] 0 [Stall_DH ] 0
+[info] [0.608] ==============================================
+[info] [0.609] Inst:Hcf
+[info] [0.609] This is the end of the program!!
+[info] [0.609] ==============================================
+[info] [0.609] Value in the RegFile
+[info] [0.611] reg[00]：00000000 reg[01]：00000000 reg[02]：00000000 reg[03]：0000000a reg[04]：00000000 reg[05]：00000000 reg[06]：ffffffff reg[07]：ffffffff
+[info] [0.612] reg[08]：00000000 reg[09]：00000000 reg[10]：00000000 reg[11]：00000000 reg[12]：00000000 reg[13]：00000000 reg[14]：00000000 reg[15]：00000000
+[info] [0.613] reg[16]：00000000 reg[17]：00000000 reg[18]：00000000 reg[19]：00000000 reg[20]：00000000 reg[21]：00000000 reg[22]：00000000 reg[23]：00000000
+[info] [0.614] reg[24]：00000000 reg[25]：00000000 reg[26]：00000000 reg[27]：00000000 reg[28]：00008004 reg[29]：00000000 reg[30]：00000000 reg[31]：00000000
+test top Success: 0 tests passed in 197 cycles in 0.644085 seconds 305.86 Hz
+[info] [0.615] RAN 192 CYCLES PASSED
+[success] Total time: 30 s, completed Apr 14, 2024, 5:50:51 PM

@@ -40,6 +40,13 @@ main:
     # Caller save pop
     lw    ra, 0(sp)   # MEM[@sp-4] -> ra
     addi  sp, sp, 4
+
+    #Load data
+    lw    t0, 0(a0)
+    lw    t0, 8(a0)
+    lw    t0, 16(a0)
+    lw    t0, 96(a0)
+    lw    t0, 100(a0)
     
     # Collee save pop
     lw    s0, 4(sp)   # @s0 -> MEM[@sp-4]
